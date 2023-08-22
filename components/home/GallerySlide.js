@@ -53,8 +53,8 @@ const GallerySlide = () => {
   }, [currentIndex]);
 
   return (
-    <div className="w-full h-screen flex items-center justify-center">
-      <div className="max-w-[1400px] h-[680px] md:flex justify-center">
+    <div className="w-full ">
+      <div className="max-w-[1400px] md:flex justify-center mt-[5rem] ">
         <div className="uppercase m-auto">
           <h1 className="text-[40px] m-4 px-4 tracking widest">
             Tai Chi Health & beauty Academy Centre
@@ -62,11 +62,14 @@ const GallerySlide = () => {
           <h2 className="text-[20px] m-4 px-4 tracking-widest">
             Trung tâm đào tạo & dạy nghề spa dưỡng sinh
           </h2>
+
+         
         </div>
-        <div className="relative max-w-[700px] h-full w-full m-auto p-4 overflow-hidden ">
+
+        <div className="relative max-w-[700px] h-[600px] w-full m-auto p-4">
           <div
             style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-            className="w-full h-full rounded-2xl bg-cneter bg-cover duration-700 ease-in-out"
+            className="w-full h-full rounded-2xl bg-cneter bg-cover duration-700 ease-in-out group cursor-pointer"
           >
             {/* Left Arrow */}
             <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-white cursor-pointer">
@@ -94,9 +97,18 @@ const GallerySlide = () => {
             ))}
           </div>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 };
 
 export default GallerySlide;
+
+{
+  /***
+
+0
+
+
+*/
+}

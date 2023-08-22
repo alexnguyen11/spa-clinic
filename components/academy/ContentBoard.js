@@ -4,114 +4,133 @@ const ContentBoard = () => {
   const programs = [
     {
       id: 1,
-      Ename: "Lorem ipsum dolor sit amet",
+      Ename: "ayurvedic head shampoo chineese standard",
       Vname: "gội đầu dưỡng sinh chuẩn trung hoa",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      price: 400,
+      price: 450,
     },
     {
       id: 2,
-      Ename: "Lorem ipsum dolor sit amet",
+      Ename: "shoulders and neck therapy speciality",
       Vname: "trị liệu vai gáy chuyên sâu",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      price: 400,
+      price: 450,
     },
     {
       id: 3,
-      Ename: "Lorem ipsum dolor sit amet",
+      Ename: "feet & legs therapy speciality",
       Vname: "trị liệu chân chuyên sâu",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      price: 400,
+      price: 450,
     },
     {
       id: 4,
-      Ename: "Lorem ipsum dolor sit amet",
+      Ename: "body therapy, organ rehabilitation",
       Vname: "trị liệu body, phục hồi chức năng tạng phủ",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      price: 400,
+      price: 675,
     },
     {
       id: 5,
       Ename: "Lorem ipsum dolor sit amet",
       Vname: "bài phế hậu covid, thải độc phổi",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      price: 400,
+      price: 450,
     },
     {
       id: 6,
-      Ename: "Lorem ipsum dolor sit amet",
+      Ename: "the whole body therapy speciality",
       Vname: "trị liệu toàn thân chuyên sâu",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      price: 400,
+      price: 1570,
     },
     {
       id: 7,
-      Ename: "Lorem ipsum dolor sit amet",
+      Ename: "ayurvedic lose weight with non-invasive",
       Vname: "giảm béo dưỡng sinh, vỡ mỡ tại chỗ không sâm lấn",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      price: 400,
+      price: 840,
     },
     {
       id: 8,
-      Ename: "Lorem ipsum dolor sit amet",
+      Ename: "spa hot stone massage therapy",
       Vname: "massage body + đá nóng thư giản",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      price: 400,
+      price: 560,
     },
     {
       id: 9,
-      Ename: "Lorem ipsum dolor sit amet",
+      Ename: "body massage chineese standard",
       Vname: "massage chuẩn trung hoa",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      price: 400,
+      price: 1120,
     },
     {
       id: 10,
-      Ename: "Lorem ipsum dolor sit amet",
+      Ename: "facial massage with jade pearl",
       Vname: "massage mặt ngọc",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      price: 400,
+      price: 560,
     },
     {
       id: 11,
-      Ename: "Lorem ipsum dolor sit amet",
+      Ename: "skin care basic",
       Vname: "chăm sóc da cơ bản",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      price: 400,
+      price: 840,
     },
     {
       id: 12,
-      Ename: "Lorem ipsum dolor sit amet",
+      Ename: "treatment acne, memorary freackless, face & skin recovery",
       Vname: "điều trị mụn, nám, tàn nhang, sẹo rỗ, phục hồi da",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      price: 400,
+      price: 560,
     },
   ];
 
   return (
-    <div className="w-full">
-      {programs.map((program) => (
-        <div
-          key={program.id}
-          className="m-2 p-4 flex items-center justify-between ml-10 text-sm rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline mb-2 hover:scale-105 transform transition duration-500 hover:font-medium flex-wrap cursor-pointer shadow-md hover:drop-shadow-2xl "
-        >
-          <div className="m-2">{program.id}</div>
-          <div className="w-[300px] flex flex-col flex-wrap justify-center p-2">
-            <div className="tracking widest uppercase text-base my-2">
-              {program.Ename}
+    <div className="container my-12 mx-auto px-4 md:px-12">
+      <div className="w-full flex justify-center my-10">
+        {" "}
+        <h1 className="tracking widest uppercase text-2xl font-bold text-gray-700">
+          Our Programs
+        </h1>
+      </div>
+      <div className="flex flex-wrap -mx-1 lg:-mx-4">
+        {programs.map((program) => (
+          <div
+            key={program.id}
+            className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3"
+          >
+            <div className="overflow-hidden rounded-lg shadow-lg cursor-pointer md:h-[23rem] text-xs">
+              <img
+                alt="Placeholder"
+                className="block h-auto w-full"
+                src="https://picsum.photos/600/400/?random"
+              />
+
+              <div className="md:flex flex-row-reverse justify-between">
+                <div className="mx-4 py-2 md:py-4 ">
+                  <p className="text-grey-darker font-medium w-[4rem]">
+                    {program.price} CAD
+                  </p>
+                </div>
+
+                <div className="flex items-center justify-between leading-tight p-2 md:p-4">
+                  <h1 className="md:mx-auto mx-2">
+                    <p className="text-black uppercase max-w-[18rem]">
+                      {program.Ename}
+                    </p>
+                  </h1>
+                </div>
+              </div>
+              <div className="max-w-[18rem] m-4 inset-x-0 bottom-0 ">
+                <p className="uppercase">{program.Vname}</p>
+              </div>
             </div>
-            <div className="tracking widest uppercase text-xs my-2">
-              {program.Vname}
-            </div>
           </div>
-          <div className="w-[500px] p-2 my-2">
-            <p className="tracking widest">{program.desc}</p>
-          </div>
-          <div className="w-full md:w-[100px] p-2 my-2">
-            <div className="text-left md:text-right">{program.price} CAD</div>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

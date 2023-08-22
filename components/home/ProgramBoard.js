@@ -6,36 +6,39 @@ const ProgramBoard = () => {
   const programs = [
     {
       id: 1,
-      title: "Program Name #1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      vname: "Gội đầu dưỡng sinh chuẩn trung hoa",
+      ename: "ayurvedic head shampoo chineese standard",
       img: { ProgramImage },
     },
     {
       id: 2,
-      title: "Program Name #2",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      vname: "Marketing + Sale tư vấn khách hàng, xây dựng thương hiệu cá nhân",
+      ename: "Marketing + Sale customer consultation, personal branding",
       img: { ProgramImage },
     },
     {
       id: 3,
-      title: "Program Name #3",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      vname: "Chăm sóc da cơ bản",
+      ename: "basic skin care",
       img: { ProgramImage },
     },
   ];
 
   return (
-    <div className="w-full">
-      <div className="max-w-[1400px] mx-auto px-2 py-16 flex flex-col items-center justify-center">
-        <div className="m-2">
+    <div className="w-full h-full">
+      <div className="max-w-[1400px] mx-auto px-2 py-[10rem] flex flex-col items-center justify-center">
+        <div className="">
           <h1 className="tracking widest uppercase text-2xl">Our Programs</h1>
         </div>
+        <a className="underline my-5 font-semibold" href="/academy">
+          See all courses here
+        </a>
         <div className="flex flex-wrap m-2 justify-center items-center">
           {programs.map((program) => (
             <div key={program.id} className="m-4">
               <ProgramCard
-                title={program.title}
-                desc={program.desc}
+                vname={program.vname}
+                ename={program.ename}
                 img={program.img}
               />
             </div>

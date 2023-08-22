@@ -4,12 +4,14 @@ import ContactCard from "@/components/academy/ContactCard";
 import Image from "next/image";
 import ProgramImg from "@/public/assets/background.jpeg";
 import ProgramImg2 from "@/public/assets/background2.jpeg";
+import Link from "next/link";
+import CodeIcon from "@mui/icons-material/Code";
 
 const academy = () => {
   return (
     <div className="w-full ">
       <div className="w-full relative h-[400px] overflow-hidden -z-50">
-        <Image src={ProgramImg} layout="fill" objectFit="cover"  />
+        <Image src={ProgramImg} layout="fill" objectFit="cover" />
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
           <h1 className="tracking-[.25rem] uppercase text-white md:text-[3rem] m-4 font-light">
@@ -20,37 +22,84 @@ const academy = () => {
           </h2>
         </div>
       </div>
-      <div className="max-w-[1400px] mx-auto px-2 py-16">
-        <div className="w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
-          <div>
-            {" "}
-            <h1 className="tracking widest uppercase text-2xl mb-4">
-              What We Provide
-            </h1>
-          </div>
 
-          <div className="py-4 max-w-[70%] m-auto text-center">
-            <p className="m-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              aperiam eligendi impedit minus animi corrupti nulla, error
-              inventore eveniet tempore, eos consequuntur iusto. Deleniti est
-              sit voluptates eligendi blanditiis quidem.
-            </p>
-            <p className="m-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+      <div className="w-full h-full mx-auto px-4md:flex py-4 flex flex-col bg-stone-100 ">
+        <div className="w-full flex justify-center my-10">
+          {" "}
+          <h1 className="tracking widest uppercase text-2xl font-bold text-gray-700">
+            What We Provide
+          </h1>
         </div>
 
-        <ContentBoard />
+        <div className="md:flex items-center m-auto max-w-6xl">
+          <div className="text-gray-600 ">
+            <div className="m-4 flex">
+              <CodeIcon />
+
+              <p className="mx-2">
+                Học viên ra nghề chuyên môn giỏi, thạo nghề, tự tin làm đẹp cho
+                khách hàng và mở cửa hàng
+              </p>
+            </div>
+            <div className="m-4 flex">
+              <CodeIcon />
+              <p className="mx-2">
+                Học viên được thực hành lên khách hàng thật chiếm 85% thời gian
+                học
+              </p>
+            </div>
+
+            <div className="m-4 flex">
+              <CodeIcon />
+              <p className="mx-2">Được đào tạo 1 kèm 1 khi tham giá khóa học</p>
+            </div>
+            <div className="m-4 flex">
+              <CodeIcon />
+              <p className="mx-2 flex">
+                Được học hết tất cả các kỹ năng từ cơ bản đến nâng cao
+              </p>
+            </div>
+            <div className="m-4 flex">
+              <CodeIcon />
+              <p className="mx-2">
+                Cơ hội làm việc trên toàn bộ hệ thống của trung tâm
+              </p>
+            </div>
+            <div className="m-4 flex">
+              <CodeIcon />
+              <p className="mx-2">Giáo trình quy chuẩn cho từng học viên</p>
+            </div>
+            <div className="m-4 flex">
+              <CodeIcon />
+              <p className="mx-2">
+                Không phát sinh bất kể 1 chi phí phụ thu nào trong quá trình học
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center flex flex-col items-center justify-center md:p-4 rounded-lg">
+            <div className="text-xl font-semibold">
+              <p className="m-5 text-purple-500">
+                <span className="text-gray-900">
+                  MARKETING + SALE TU VAN KHACH HANG{" "}
+                </span>
+                TRI GIA 15TR XAY DUNG THUONG HIEU CA NHAN TRI GIA 10TR TANG KEM
+                KHI DANG KY FULL KHOA HOC
+              </p>
+            </div>
+            <Link
+              className="inline-block rounded-md text-lg font-semibold py-2 px-4 text-white bg-purple-500"
+              href="#register"
+            >
+              Register Here
+            </Link>
+          </div>
+        </div>
       </div>
-      <div className="w-full relative h-[600px] overflow-hidden -z-50">
+
+      <ContentBoard />
+
+      <div id="register" className="w-full relative h-[600px] overflow-hidden -z-50">
         <div className="absolute inset-0">
           <Image
             src={ProgramImg2}

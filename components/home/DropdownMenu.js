@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { ArrowDropDown, ArrowDropUp } from "@mui/icons-material";
-import Link from "next/link";
 import { useRouter } from "next/router";
 
 const DropdownMenu = ({ item }) => {
@@ -76,41 +75,4 @@ const DropdownMenu = ({ item }) => {
 
 export default DropdownMenu;
 
-{
-  /**
 
-
-<div>
-      <button
-        onClick={() => {
-          setIsOpen(!isOpen);
-        }}
-        className="flex flex-row"
-      >
-        <span>{item}</span>
-        {isOpen ? <ArrowDropUp /> : <ArrowDropDown />}
-      </button>
-      <div
-        className={
-          !isOpen
-            ? "hidden absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48"
-            : "absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48"
-        }
-      >
-        <div className="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-gray-900">
-          <Link href="/massage">
-            <div className="block px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:scale-103 transform transition duration-500 hover:font-medium">
-              Massage
-            </div>
-          </Link>
-          <Link href="/spa">
-            <div className="block px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:scale-103 transform transition duration-500 hover:font-medium">
-              Spa
-            </div>
-          </Link>
-        </div>
-      </div>
-    </div>
-
-*/
-}
