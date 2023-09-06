@@ -50,7 +50,7 @@ const DropdownMenu = ({ item }) => {
         {isOpen ? <ArrowLeft /> : <ArrowRight />}
       </button>
       {isOpen && (
-        <div className="dropdown-menu-content translate-x-[6rem] -translate-y-7">
+        <div className="dropdown-menu-content translate-x-[6.5rem] -translate-y-9">
           <div className="absolute mt-2 rounded-md shadow-lg md:w-48">
             <div className="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-gray-900">
               <div
