@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ArrowDropDown, ArrowDropUp } from "@mui/icons-material";
+import { ArrowRight, ArrowLeft } from "@mui/icons-material";
 import { useRouter } from "next/router";
 
 const DropdownMenu = ({ item }) => {
@@ -47,21 +47,21 @@ const DropdownMenu = ({ item }) => {
         className="flex flex-row"
       >
         <span>{item}</span>
-        {isOpen ? <ArrowDropUp /> : <ArrowDropDown />}
+        {isOpen ? <ArrowLeft /> : <ArrowRight />}
       </button>
       {isOpen && (
-        <div className="dropdown-menu-content">
-          <div className="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+        <div className="dropdown-menu-content translate-x-[6rem] -translate-y-7">
+          <div className="absolute mt-2 rounded-md shadow-lg md:w-48">
             <div className="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-gray-900">
               <div
                 onClick={() => handleItemClick("/massage")}
-                className="block px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:scale-103 transform transition duration-500 hover:font-medium cursor-pointer"
+                className="block px-4 py-2 text-sm bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:scale-103 transform transition duration-500 hover:font-medium cursor-pointer"
               >
                 Massage
               </div>
               <div
                 onClick={() => handleItemClick("/spa")}
-                className="block px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:scale-103 transform transition duration-500 hover:font-medium cursor-pointer"
+                className="block px-4 py-2 text-sm bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:scale-103 transform transition duration-500 hover:font-medium cursor-pointer"
               >
                 Spa
               </div>
@@ -74,5 +74,3 @@ const DropdownMenu = ({ item }) => {
 };
 
 export default DropdownMenu;
-
-
