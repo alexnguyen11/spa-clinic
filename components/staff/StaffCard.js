@@ -1,9 +1,9 @@
-import React from "react";
+import Image from "next/image";
 
 const StaffCard = ({ name, position, desc, img }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-4">
-      <img
+    <div className="bg-white rounded-lg shadow-md p-4 cursor-pointer">
+      <Image
         src={img} // Replace with actual image path
         alt="Staff 1"
         className="w-full h-48 object-cover rounded"

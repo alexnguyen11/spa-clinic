@@ -33,7 +33,7 @@ const index = () => {
 
   return (
     <div className="w-full">
-    <Banner/>
+      <Banner />
       <div className="w-full flex flex-col justify-center items-center">
         <div className="">
           <h1 className="tracking widest uppercase text-2xl font-bold text-gray-700 mb-5 mt-20">
@@ -42,7 +42,7 @@ const index = () => {
         </div>
         <div className="my-10">
           {spas.map((spa) => (
-            <Link href="/booking">
+            <Link href="/booking/#spa">
               <ServiceCard
                 key={spa.id}
                 title={spa.title}

@@ -1,4 +1,6 @@
 import React from "react";
+import CourseImg from "@/public/assets/academy/courseimg.jpeg";
+import Image from "next/image";
 
 const ContentBoard = () => {
   const programs = [
@@ -92,7 +94,7 @@ const ContentBoard = () => {
     <div className="container my-12 mx-auto px-4 md:px-12">
       <div className="w-full flex justify-center my-10">
         {" "}
-        <h1 className="tracking widest uppercase text-2xl font-bold text-gray-700">
+        <h1 className="tracking-widest uppercase text-3xl font-bold text-emerald-700 mt-[4rem]">
           Our Programs
         </h1>
       </div>
@@ -103,10 +105,10 @@ const ContentBoard = () => {
             className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3"
           >
             <div className="overflow-hidden rounded-lg shadow-lg cursor-pointer md:h-[23rem] text-xs">
-              <img
+              <Image
                 alt="Placeholder"
                 className="block h-auto w-full"
-                src="https://picsum.photos/600/400/?random"
+                src={CourseImg}
               />
 
               <div className="md:flex flex-row-reverse justify-between">

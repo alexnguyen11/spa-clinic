@@ -1,12 +1,22 @@
 import React, { useState } from "react";
 import giftcardImg from "@/public/assets/giftcard.jpeg";
-import Image from "next/image";
+import GiftCard from "@/components/gifts/GiftCard";
+import { useDispatch } from "react-redux";
+import { addProduct } from "@/redux/cartRedux";
 
 const Gifts = () => {
   const [selectedAmount, setSelectedAmount] = useState(0);
+  const [quantity, setQuantity] = useState(1);
+  const dispatch = useDispatch();
 
   const handleAmountSelect = (amount) => {
     setSelectedAmount(amount);
+  };
+
+  const handleAddToCart = () => {
+    // You can add your logic here to add the gift card to the cart
+    dispatch(addProduct({ quantity, selectedAmount }));
+    console.log(`Added ${quantity}x $${selectedAmount} gift card to cart`);
   };
 
   const purchaseGiftCard = () => {
@@ -27,14 +37,14 @@ const Gifts = () => {
       <p className="mb-4">Select a gift card amount:</p>
       <div className="grid grid-cols-2 gap-6">
         {denominations.map((item) => (
-          <div className="">
-            <div className="overfolow-hidden">
-              {" "}
-              <Image className="rounded-t-lg" src={giftcardImg} />
-            </div>
-
-            <p className="text-center mt-2 font-semibold">{item.amount}</p>
-          </div>
+          <GiftCard
+            key={item.amount}
+            item={item}
+            giftcardImg={item.image}
+            quantity={quantity}
+            handleAmountSelect={handleAmountSelect}
+            handleAddToCart={handleAddToCart}
+          />
         ))}
       </div>
       <button

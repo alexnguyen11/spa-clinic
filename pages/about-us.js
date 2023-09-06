@@ -2,6 +2,10 @@ import React from "react";
 import AboutImg from "@/public/assets/about.jpeg";
 import StaffCard from "@/components/staff/StaffCard";
 import Image from "next/image";
+import VincentImg from "@/public/assets/profile/vincent_profile.jpeg";
+import EllaImg from "@/public/assets/profile/ella_profile.jpeg";
+import SophieImg from "@/public/assets/profile/sophie_profile.jpeg";
+import ProfileIcon from "@/public/assets/profile/profile_icon.jpeg";
 
 const StoriesSection = () => {
   const staffs = [
@@ -10,71 +14,71 @@ const StoriesSection = () => {
       name: "Sophie Wu",
       position: "Massage Therapist",
       desc: "",
-      img: "",
+      img: SophieImg,
     },
     {
       id: 2,
-      name: "Vinh Son Dang",
+      name: "Vincent Dang",
       position: "Massage Therapist",
       desc: "",
-      img: "",
+      img: VincentImg,
     },
     {
       id: 3,
       name: "Tony Wu",
       position: "Massage Therapist",
       desc: "",
-      img: "",
+      img: ProfileIcon,
     },
     {
       id: 4,
       name: "Avi Zhen",
       position: "Massage Therapist",
       desc: "",
-      img: "",
+      img: ProfileIcon,
     },
     {
       id: 5,
       name: "Ann Phong",
       position: "Massage Therapist",
       desc: "",
-      img: "",
+      img: ProfileIcon,
     },
     {
       id: 6,
       name: "Annie Liu",
       position: "Massage Therapist",
       desc: "",
-      img: "",
+      img: ProfileIcon,
     },
     {
       id: 7,
       name: "Jie Xu",
       position: "Massage Therapist",
       desc: "",
-      img: "",
+      img: EllaImg,
     },
     {
       id: 8,
       name: "Sara Yao",
       position: "Massage Therapist",
       desc: "",
-      img: "",
+      img: ProfileIcon,
     },
     {
       id: 9,
       name: "Hanh",
       position: "Hair Technician",
       desc: "",
-      img: "",
+      img: ProfileIcon,
     },
   ];
   return (
     <div className="bg-white py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Our Stories</h2>
-          <div className="flex flex-wrap -mx-4 tracking-wide">
+          <h2 className="text-3xl font-bold mb-8 text-teal-900">Our Stories</h2>
+          <div className="flex flex-wrap tracking-wide">
             <p className="text-base mt-4">
               Taichi Massage & Therapy was originally built in 2020 during the
               COVID-19 pandemic. Despite experiencing lockdowns, we became busy
@@ -89,7 +93,9 @@ const StoriesSection = () => {
           </div>
         </div>
         <div className="max-w-4xl mx-auto mt-12">
-          <h2 className="text-3xl font-bold mb-8">Our RMT Team</h2>
+          <h2 className="text-3xl font-bold mb-8 text-teal-900">
+            Our RMT & Technician Team
+          </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {/* Staff Card 1 */}
             {staffs.map((staff) => (
@@ -101,8 +107,6 @@ const StoriesSection = () => {
                 img={staff.img}
               />
             ))}
-
-            {/* Repeat similar staff card structure for other team members */}
           </div>
         </div>
       </div>
@@ -139,10 +143,10 @@ const about = () => {
               </p>
               <ul className="mb-10">
                 <li className="flex items-center mb-4 text-base text-gray-600 ">
-                  Services and Programs
+                  Professional High-Quality Massage Services
                 </li>
                 <li className="flex items-center mb-4 text-base text-gray-600 ">
-                  Value for money
+                  Comprehensive Spa Course Training
                 </li>
                 <li className="flex items-center mb-4 text-base text-gray-600 ">
                   Support Team

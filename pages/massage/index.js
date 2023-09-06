@@ -102,7 +102,7 @@ const index = () => {
         </div>
         <div className="my-10">
           {massages.map((massage) => (
-            <Link href="/booking">
+            <Link href="/booking/#massage">
               <ServiceCard
                 key={massage.id}
                 title={massage.title}

@@ -7,14 +7,14 @@ import PhoneIcon from "@mui/icons-material/Phone";
 const AddressCard = () => {
   return (
     <div className="w-full h-full">
-      <div className="max-w-[1400px] mx-auto bg-white  py-[10rem] my-10">
+      <div className="max-w-[1400px] mx-auto bg-white my-[4rem]">
         <div className="w-full flex flex-wrap items-center justify-center">
           <div className="my-10">
-            <h1 className="tracking widest uppercase text-2xl">Our Location</h1>
+            <h1 className="tracking-widest uppercase text-2xl">Our Location</h1>
           </div>
-          <div className="md:flex my-10  justify-center">
+          <div className="md:flex m-10  justify-center">
             {/* Map Image */}
-            <div className="w-2/3 pr-4">
+            <div className="pr-4">
               <Image
                 src={mapImage}
                 alt="Map"
@@ -24,7 +24,7 @@ const AddressCard = () => {
               />
             </div>
             {/* Description */}
-            <div className="w-1/3 mx-10">
+            <div className="max-w-[25rem] md:mx-10 m-10">
               <h2 className="text-xl font-semibold mb-2">
                 WE’RE LOCATED 5 MINUTES FROM THE C-TRAIN CHINOOK STATION
               </h2>

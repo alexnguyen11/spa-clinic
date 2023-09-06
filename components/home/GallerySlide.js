@@ -53,8 +53,8 @@ const GallerySlide = () => {
   }, [currentIndex]);
 
   return (
-    <div className="w-full ">
-      <div className="max-w-[1400px] md:flex justify-center mt-[5rem] ">
+    <div className="w-full my-[4rem]">
+      <div className="max-w-[1400px] md:flex justify-center">
         <div className="uppercase m-auto">
           <h1 className="text-[40px] m-4 px-4 tracking widest">
             Tai Chi Health & beauty Academy Centre
