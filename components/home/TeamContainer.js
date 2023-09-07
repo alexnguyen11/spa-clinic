@@ -27,7 +27,7 @@ const TeamContainer = () => {
         </h1>
 
         <div className="w-full md:flex md:space-x-6 mt-6 items-center justify-center">
-          <div className="w-full md:w-2/4">
+          <div className="w-full md:w-2/4 mx-2">
             <h2 className="text-xl font-semibold mb-2">
               WE HAVE THERAPISTS AVAILABLE 7 DAYS PER WEEK BY APPOINTMENT
             </h2>

@@ -11,9 +11,7 @@ const Footer = () => {
             <a href="#" className="flex items-center overflow-hidden">
               <Image
                 src={LogoImg}
-                className=""
-                width={300}
-                height={400}
+                className="md:w-[300px] w-[150px]"
                 alt="Taichi Logo"
               />
             </a>
@@ -115,13 +113,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-{
-  /**
-
-
-
-
-
-*/
-}

@@ -36,14 +36,14 @@ const ProgramBoard = () => {
           <Image src={backgroundImage} layout="fill" objectFit="cover" />
 
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-            <h2 className="mb-2 uppercase text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-blue-400">
+            <h2 className="mb-2 uppercase md:text-5xl text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-blue-400">
               Special Offer
             </h2>
 
-            <p className="mb-4 text-2xl tracking-wide font-light my-5 text-white">
+            <p className="mb-4 md:text-2xl text-[1rem] tracking-wide font-light my-5 text-white">
               Don't miss out on our limited-time promotion
             </p>
-            <ul className="text-lg list-disc list-inside pl-4 mb-4 text-white">
+            <ul className="md:text-lg text-[1rem] list-disc list-inside pl-4 mb-4 text-white">
               <li className="mb-4">
                 Any 3 courses:{" "}
                 <span className="font-bold uppercase">30% off</span>

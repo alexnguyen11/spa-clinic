@@ -28,7 +28,7 @@ const contact = () => {
         <div className="justify-center max-w-6xl p-4 mx-auto lg:py-11 md:px-6">
           <div className="grid md:grid-cols-2 gap-[5]">
             <div className="w-full p-4 mb-10 sm:w-1/2 ml-[5rem]">
-              <div className="max-w-xs mx-auto">
+              <div className="max-w-xs md:mx-auto">
                 <div className="inline-flex items-center justify-center w-12 h-12 mb-6 text-gray-100 bg-gray-500 rounded-full ">
                   <Email />
                 </div>

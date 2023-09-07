@@ -4,7 +4,7 @@ import DropdownMenu from "../home/DropdownMenu";
 
 const SubNav = ({ items }) => {
   return (
-    <div className="md:hidden flex items-center justify-center p-5">
+    <div className="md:hidden flex items-center p-5 z-50">
       <div>
         <ul className="flex flex-col">
           {items.map((item) => (

@@ -24,7 +24,7 @@ const AddressCard = () => {
               />
             </div>
             {/* Description */}
-            <div className="max-w-[25rem] md:mx-10 m-10">
+            <div className="max-w-[25rem] md:mx-10 my-4">
               <h2 className="text-xl font-semibold mb-2">
                 WE’RE LOCATED 5 MINUTES FROM THE C-TRAIN CHINOOK STATION
               </h2>
