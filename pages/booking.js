@@ -37,21 +37,23 @@ const booking = () => {
           </p>
           <div className="mt-6">
             <p className="text-xl font-semibold">Contact to Book</p>
+
             <p className="text-lg my-2">
               <PersonIcon /> Hanh
             </p>
-            <p className="text-lg">
-              <CallIcon /> 403-703-3883
-            </p>
+            <a href="tel:4037033883" className="hover:underline">
+              {" "}
+              <p className="text-lg">
+                <CallIcon /> 403-703-3883
+              </p>
+            </a>
           </div>
         </div>
         <div
           id="course_register"
           className="p-[3rem] bg-gradient-to-r from-emerald-500 to-emerald-900 text-white text-center lg:w-1/2 my-10 mb-[5rem]"
         >
-          <h1 className="text-3xl font-bold ">
-            Training Course Registration
-          </h1>
+          <h1 className="text-3xl font-bold ">Training Course Registration</h1>
           <p className="mt-4 text-lg">
             Join our training courses to begin your career
           </p>
@@ -59,15 +61,18 @@ const booking = () => {
             <p className="text-lg my-2">
               <PersonIcon /> Vincent Dang
             </p>
+            <a href="tel:4038800062" className="hover:underline">
+              <p className="text-lg">
+                <CallIcon /> 403-800-062
+              </p>
+            </a>
 
-            <p className="text-lg">
-              <CallIcon /> 408-800-062
-            </p>
             <a
               href="https://www.google.com/maps/place/Taichi+Massage+%26+Therapy/@51.0035456,-114.0726939,17z/data=!3m1!4b1!4m6!3m5!1s0x53717180f682ba31:0xe0bbd1cf4e8cf58c!8m2!3d51.0035456!4d-114.070119!16s%2Fg%2F11pwx141q3?entry=ttu"
               target="_blank"
+              className="hover:underline"
             >
-              <p className="text-lg my-2">
+              <p className="text-lg my-2 hover:underline">
                 {" "}
                 <BusinessIcon className="mr-2" />
                 5717 3 St SW, Calgary, AB T2H 0J6

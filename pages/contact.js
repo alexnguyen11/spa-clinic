@@ -19,12 +19,14 @@ const contact = () => {
             Let's Stay Connected
           </h2>
           <p className="text-sm dark:text-gray-200">
-            Lorem ipsum dor amet ispicusus isopiros amet ispis lorem{" "}
+            Whether you have questions about our services or want to schedule an
+            appointment, we're here to assist you in your journey to relaxation
+            and wellness.
           </p>
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center bg-stone-100 w-full ">
+      <div className="flex flex-wrap items-center bg-stone-100 w-full">
         <div className="justify-center max-w-6xl p-4 mx-auto lg:py-11 md:px-6">
           <div className="grid md:grid-cols-2 gap-[5]">
             <div className="w-full p-4 mb-10 sm:w-1/2 ml-[5rem]">
@@ -36,8 +38,8 @@ const contact = () => {
                   Email
                 </h2>
                 <a
-                  href="#"
-                  className="text-base font-medium text-gray-500 md:text-lg "
+                  href="mailto:taichigroup@icloud.com"
+                  className="text-base font-medium text-gray-500 md:text-lg hover:underline"
                 >
                   Taichigroup@icloud.com
                 </a>
@@ -53,8 +55,8 @@ const contact = () => {
                   Phone
                 </h2>
                 <a
-                  href="#"
-                  className="text-base font-medium text-gray-500 md:text-lg"
+                  href="tel:5879179758"
+                  className="text-base font-medium text-gray-500 md:text-lg hover:underline"
                 >
                   587-917-9758
                 </a>
@@ -78,7 +80,7 @@ const contact = () => {
                 <a
                   href="https://www.google.com/maps?sca_esv=558805880&output=search&q=taichi+massage&source=lnms&entry=mc&sa=X&ved=2ahUKEwi_jMyYxO6AAxX9GTQIHS6VC7QQ0pQJegQIDBAB"
                   target="_blank"
-                  className="text-base font-medium text-gray-500 md:text-lg "
+                  className="text-base font-medium text-gray-500 md:text-lg hover:underline"
                 >
                   5717 3 St SW, Calgary, AB T2H 0J6
                 </a>

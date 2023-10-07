@@ -40,12 +40,22 @@ const AddressCard = () => {
                 Whether you’re a student, faculty or employee, we can create the
                 best massage therapy approach for your body.
               </p>
-              <p className="text-gray-700 font-base mt-5 tracking-wide">
-                <LocationOnIcon /> 5717 3 St SW, Calgary, AB T2H 0J6
-              </p>
-              <p className="text-gray-700 font-base mt-2">
-                <PhoneIcon /> 587-917-9758
-              </p>
+              <a
+                href="https://www.google.com/maps/place/Taichi+Massage+%26+Therapy/@51.0035456,-114.0726939,17z/data=!3m1!4b1!4m6!3m5!1s0x53717180f682ba31:0xe0bbd1cf4e8cf58c!8m2!3d51.0035456!4d-114.070119!16s%2Fg%2F11pwx141q3?entry=ttu"
+                target="_blank"
+                className="hover:underline"
+              >
+                <p className="text-gray-700 font-base mt-5 tracking-wide hover:underline">
+                  <LocationOnIcon /> 5717 3 St SW, Calgary, AB T2H 0J6
+                </p>
+              </a>
+
+              <a href="tel:5879179758" className="hover:underline">
+                {" "}
+                <p className="text-gray-700 font-base mt-2">
+                  <PhoneIcon /> 587-917-9758
+                </p>
+              </a>
             </div>
           </div>
         </div>

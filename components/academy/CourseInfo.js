@@ -6,17 +6,17 @@ const CourseInfo = () => {
   return (
     <div>
       <div className="md:flex items-center m-auto max-w-6xl">
-        <div className="text-gray-600 ">
+        <div className="text-gray-600 md:text-base text-sm">
           <div className="m-4 flex">
             <CodeIcon />
             <p className="mx-2">
-              Students become professionally skilled, master their craft, gain confidence in beautifying clients, and open their own businesses.
+              Students become good professionals, proficient in their profession, confident in beautifying customers, and opening stores.
             </p>
           </div>
           <div className="m-4 flex">
             <CodeIcon />
             <p className="mx-2">
-              Students practice on real clients for 85% of the learning time.
+              Students practice on real customers for 85% of the learning time.
             </p>
           </div>
 
@@ -33,7 +33,7 @@ const CourseInfo = () => {
           <div className="m-4 flex">
             <CodeIcon />
             <p className="mx-2">
-              Opportunity to work throughout the center's entire system.
+              Opportunity to work on the entire system of the centre.
             </p>
           </div>
           <div className="m-4 flex">
@@ -43,22 +43,31 @@ const CourseInfo = () => {
           <div className="m-4 flex">
             <CodeIcon />
             <p className="mx-2">
-              No additional costs incurred during the learning process.
+              No additional costs incurred during the study process.
             </p>
           </div>
         </div>
 
         <div className="text-center flex flex-col items-center justify-center md:p-4 rounded-lg">
-          <div className="text-xl font-semibold">
-            <p className="m-5 text-purple-500">
-              <span className="text-gray-900">
-                MARKETING + SALES CONSULTATION{" "}
+          <div className="md:text-xl text-sm font-semibold">
+            <p className="m-4 text-purple-500 italic">
+              <span className="text-gray-500">
+                MARKETING + SALES, CUSTOMER CONSULTATION FOR{" "}
               </span>
-              VALUED AT 845 CAD BRAND BUILDING VALUED AT 845 CAD AS A BONUS WHEN REGISTERING FOR THE FULL COURSE
+              1000 CAD
+            </p>
+            <p className="m-4 text-purple-500 italic">
+              <span className="text-gray-500">
+               BUILD PERSONAL BRAND FOR {" "}
+              </span>
+              500 CAD
+            </p>
+            <p className="m-5 text-gray-900">
+              FREE MORE WHEN REGISTER FOR A FULL COURSE
             </p>
           </div>
           <Link
-            className="inline-block rounded-md text-lg font-semibold py-2 px-4 text-white bg-purple-500"
+            className="inline-block rounded-md md:text-lg text-sm font-semibold py-2 px-4 text-white bg-purple-500"
             href="/booking/#course_register"
           >
             Register Here

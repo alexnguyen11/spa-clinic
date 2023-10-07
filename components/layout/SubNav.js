@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import DropdownMenu from "../home/DropdownMenu";
+import DropdownMenu from "./DropdownMenu";
 
 const SubNav = ({ items }) => {
   return (

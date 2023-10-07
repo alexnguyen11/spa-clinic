@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import DropdownMenu from "../home/DropdownMenu";
+import MainDropdown from "./MainDropdown";
 import { Menu, Close } from "@mui/icons-material/";
 import LogoImg from "@/public/assets/logo.png";
 import Image from "next/image";
@@ -19,7 +19,7 @@ const Navbar = ({ items, handleNav, nav }) => {
               className="w-[7rem] h-[2rem] flex items-center justify-center ml-10 text-base rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline mb-2 hover:scale-103 transform transition duration-500 hover:font-medium font-semibold whitespace-nowrap "
             >
               {item.name === "Services" ? (
-                <DropdownMenu item={item.name} />
+                <MainDropdown item={item.name} />
               ) : (
                 <Link href={item.url}>{item.name}</Link>
               )}

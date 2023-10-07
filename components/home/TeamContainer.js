@@ -28,10 +28,10 @@ const TeamContainer = () => {
 
         <div className="w-full md:flex md:space-x-6 mt-6 items-center justify-center">
           <div className="w-full md:w-2/4 mx-2">
-            <h2 className="text-xl font-semibold mb-2">
+            <h2 className="md:text-xl text-sm font-semibold mb-2">
               WE HAVE THERAPISTS AVAILABLE 7 DAYS PER WEEK BY APPOINTMENT
             </h2>
-            <p className="text-gray-600 tracking-wide">
+            <p className="text-gray-600 tracking-wide md:text-base text-sm">
               Our Massage Therapy is Calgary’s most comprehensive, advanced, and
               comfortable massage center. Founded in 2001, we focus on finding
               the “solution to the cause” of your pain or stress-related
@@ -51,8 +51,12 @@ const TeamContainer = () => {
                 <div className="w-24 h-24 overflow-hidden rounded-full">
                   <Image src={therapist.imageUrl} alt={therapist.name} />
                 </div>
-                <h2 className="text-xl font-semibold mt-2">{therapist.name}</h2>
-                <p className="text-gray-500">{therapist.title}</p>
+                <h2 className="md:text-xl text-base font-semibold mt-2">
+                  {therapist.name}
+                </h2>
+                <p className="text-gray-500 md:text-base text-sm">
+                  {therapist.title}
+                </p>
               </div>
             ))}
           </div>
@@ -61,7 +65,7 @@ const TeamContainer = () => {
         <div className="text-center mt-6">
           <a
             href="/about-us"
-            className="text-blue-500 hover:underline"
+            className="text-blue-500 hover:underline md:text-base text-sm"
             target=""
           >
             See More About Us

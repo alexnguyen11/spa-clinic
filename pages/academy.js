@@ -12,10 +12,10 @@ const academy = () => {
         <Image src={ProgramImg} layout="fill" objectFit="cover" />
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-          <h1 className="tracking-[.25rem] uppercase text-white md:text-[3rem] m-4 font-light">
+          <h1 className="tracking-[.25rem] uppercase text-white md:text-[3rem] md:m-4 font-light">
             Taichi Health & Beauty Academy Center
           </h1>
-          <h2 className="tracking-[.14rem] uppercase text-white md:text-xl m-4 font-thin">
+          <h2 className="tracking-[.14rem] uppercase text-white md:text-xl md:m-4 my-4 font-thin">
             Trung Tâm đào tạo & dạy nghề spa dưỡng sinh
           </h2>
         </div>
