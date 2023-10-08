@@ -1,78 +1,47 @@
 import React from "react";
 import Link from "next/link";
 import CodeIcon from "@mui/icons-material/Code";
+import Button from "@mui/material/Button";
 
 const CourseInfo = () => {
   return (
-    <div>
-      <div className="md:flex items-center m-auto max-w-6xl">
-        <div className="text-gray-600 md:text-base text-sm">
-          <div className="m-4 flex">
-            <CodeIcon />
-            <p className="mx-2">
-              Students become good professionals, proficient in their profession, confident in beautifying customers, and opening stores.
-            </p>
-          </div>
-          <div className="m-4 flex">
-            <CodeIcon />
-            <p className="mx-2">
-              Students practice on real customers for 85% of the learning time.
-            </p>
-          </div>
+    <div className="p-8 sm:p-16 bg-stone-100 rounded-lg shadow-lg">
+      <div className="text-center">
+        <h1 className="tracking-widest uppercase text-2xl md:text-4xl font-bold text-gray-700 mb-10">
+          What We Provide
+        </h1>
+      </div>
 
-          <div className="m-4 flex">
-            <CodeIcon />
-            <p className="mx-2">Receive 1-on-1 training during the course.</p>
-          </div>
-          <div className="m-4 flex">
-            <CodeIcon />
-            <p className="mx-2 flex">
-              Learn all skills from basic to advanced.
-            </p>
-          </div>
-          <div className="m-4 flex">
-            <CodeIcon />
-            <p className="mx-2">
-              Opportunity to work on the entire system of the centre.
-            </p>
-          </div>
-          <div className="m-4 flex">
-            <CodeIcon />
-            <p className="mx-2">Standardized curriculum for each student.</p>
-          </div>
-          <div className="m-4 flex">
-            <CodeIcon />
-            <p className="mx-2">
-              No additional costs incurred during the study process.
-            </p>
-          </div>
-        </div>
-
-        <div className="text-center flex flex-col items-center justify-center md:p-4 rounded-lg">
-          <div className="md:text-xl text-sm font-semibold">
-            <p className="m-4 text-purple-500 italic">
-              <span className="text-gray-500">
-                MARKETING + SALES, CUSTOMER CONSULTATION FOR{" "}
-              </span>
-              1000 CAD
-            </p>
-            <p className="m-4 text-purple-500 italic">
-              <span className="text-gray-500">
-               BUILD PERSONAL BRAND FOR {" "}
-              </span>
-              500 CAD
-            </p>
-            <p className="m-5 text-gray-900">
-              FREE MORE WHEN REGISTER FOR A FULL COURSE
-            </p>
-          </div>
-          <Link
-            className="inline-block rounded-md md:text-lg text-sm font-semibold py-2 px-4 text-white bg-purple-500"
-            href="/booking/#course_register"
+      <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        {[
+          "Students become good professionals, proficient in their profession, confident in beautifying customers, and opening stores.",
+          "Students practice on real customers for 85% of the learning time.",
+          "Receive 1-on-1 training during the course.",
+          "Learn all skills from basic to advanced.",
+          "Opportunity to work on the entire system of the centre.",
+          "Standardized curriculum for each student.",
+          "No additional costs incurred during the study process.",
+        ].map((text, idx) => (
+          <div
+            key={idx}
+            className="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition"
           >
-            Register Here
-          </Link>
-        </div>
+            <CodeIcon fontSize="large" color="primary" />
+            <p className="text-gray-600">{text}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-12 text-center">
+        <Link href="/booking#course_register">
+          <Button
+            variant="contained"
+            className="text-white bg-black hover:bg-primary-600 transition"
+            size="large"
+          >
+            Register Now
+          </Button>
+        </Link>
       </div>
     </div>
   );

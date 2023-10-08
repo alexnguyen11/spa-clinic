@@ -4,7 +4,6 @@ import {
   ArrowForwardIos,
   FiberManualRecord,
 } from "@mui/icons-material/";
-import Image from "next/image";
 
 const GallerySlide = () => {
   const slides = [
@@ -53,20 +52,18 @@ const GallerySlide = () => {
   }, [currentIndex]);
 
   return (
-    <div className="w-full my-[4rem]">
-      <div className="max-w-[1400px] md:flex justify-center">
+    <div className="sm:p-16 xs:p-8 px-6 py-12 relative z-10">
+      <div className="md:flex justify-between">
         <div className="uppercase m-auto">
-          <h1 className="text-[40px] m-4 px-4 tracking widest">
+          <h1 className="text-[27px] md:text-[40px] m-4 px-4 tracking widest">
             Tai Chi Health & beauty Academy Centre
           </h1>
-          <h2 className="text-[20px] m-4 px-4 tracking-widest">
+          <h2 className="text-[16px] md:text-[20px] m-4 px-4 tracking-widest">
             Trung tâm đào tạo & dạy nghề spa dưỡng sinh
           </h2>
-
-         
         </div>
 
-        <div className="relative max-w-[700px] h-[600px] w-full m-auto p-4">
+        <div className="relative w-[300px] md:w-[800px] h-[200px] md:h-[600px]  m-auto p-4">
           <div
             style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
             className="w-full h-full rounded-2xl bg-cneter bg-cover duration-700 ease-in-out group cursor-pointer"

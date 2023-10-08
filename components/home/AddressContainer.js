@@ -4,13 +4,13 @@ import Image from "next/image";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 
-const AddressCard = () => {
+const AddressContainer = () => {
   return (
-    <div className="w-full h-full">
-      <div className="max-w-[1400px] mx-auto bg-white my-[4rem]">
+    <div className="sm:p-16 xs:p-8 px-6 py-12 relative">
+      <div className=" bg-white ">
         <div className="w-full flex flex-wrap items-center justify-center">
-          <div className="my-10">
-            <h1 className="tracking-widest uppercase text-2xl">Our Location</h1>
+          <div className="my-5 md:my-10">
+            <h1 className="tracking-widest uppercase text-2xl md:text-[40px] font-bold">Our Location</h1>
           </div>
           <div className="md:flex m-10  justify-center">
             {/* Map Image */}
@@ -64,4 +64,4 @@ const AddressCard = () => {
   );
 };
 
-export default AddressCard;
+export default AddressContainer;

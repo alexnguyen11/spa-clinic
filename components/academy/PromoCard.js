@@ -1,33 +1,64 @@
+import { motion } from "framer-motion";
 const PromoCard = () => {
   return (
-    <div className="bg-white w-full flex flex-col items-center justify-center p-6 shadow-lg">
-      <h2 className=" mb-2 uppercase md:text-5xl text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-cyan-700 to-purple-900">
-        Special Offer
-      </h2>
-      <p className="mb-4 md:text-2xl text-sm tracking-wide font-light my-5">
+    <motion.div className="sm:p-16 xs:p-8 px-6 py-12 relative z-10 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-lg shadow-xl text-white">
+      <div className="w-full flex flex-col items-center justify-center">
+        {/* Header */}
+        <h1 className="mb-4 uppercase md:text-6xl text-4xl font-extrabold">
+          special offer
+        </h1>
+        <p className="mb-6 uppercase text-xl font-medium">
         Don't miss out on our limited-time promotion
-      </p>
-      <ul className="md:text-lg text-base list-disc list-inside pl-4 mb-4">
-        <li className="mb-2">
-          Any 3 courses: <span className="font-bold uppercase">30% off</span>
-        </li>
-        <li className="mb-2">
-          Any 4 courses: <span className="font-bold uppercase">40% off</span>
-        </li>
-        <li className="mb-2">
-          Any 5 courses: <span className="font-bold uppercase">50% off</span>
-        </li>
-        <li className="mb-2">
-          All courses: <span className="font-bold uppercase">70% off</span>
-        </li>
-      </ul>
-      <p className="font-semibold uppercase tracking-wider md:text-xl text-base">
-        Total for all courses:{" "}
-        <span className="md:text-2xl text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-amber-700 to-orange-400">
-          $8525
-        </span>
-      </p>
-    </div>
+        </p>
+
+        <div className="flex flex-col md:flex-row md:gap-8 md:my-5">
+          <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-7">
+            <div className="text-center mb-4 md:mb-0">
+              <p className="text-4xl font-extrabold mb-2">30%</p>
+              <p className="uppercase bg-white text-blue-500 px-4 py-2 rounded">
+                Any 3 courses
+              </p>
+            </div>
+            <div className="text-center mb-4 md:mb-0">
+              <p className="text-4xl font-extrabold mb-2">40%</p>
+              <p className="uppercase bg-white text-blue-500 px-4 py-2 rounded">
+                Any 4 courses
+              </p>
+            </div>
+            <div className="text-center mb-4 md:mb-0">
+              <p className="text-4xl font-extrabold mb-2">50%</p>
+              <p className="uppercase bg-white text-blue-500 px-4 py-2 rounded">
+                Any 5 courses
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row text-center items-center justify-center md:gap-8">
+            <div className="w-1 h-16 bg-white my-4"></div>
+            <div className="mb-6 bg-white text-blue-500 p-4 rounded">
+              <span className="font-extrabold text-4xl">70% off</span>
+              <span className="block uppercase">for all courses</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Services list */}
+        <div className="flex flex-col justify-center items-center uppercase my-2">
+          <h2 className="text-3xl font-semibold mb-2">Our Packages</h2>
+          <div className="text-center my-2">
+            MARKETING + SALES, CUSTOMER CONSULTATION FOR{" "}
+            <span className="text-yellow-300">1000 CAD</span>
+          </div>
+          <div className="text-center my-2">
+            BUILD PERSONAL BRAND FOR{" "}
+            <span className="text-yellow-300">500 CAD</span>
+          </div>
+        </div>
+        <div className="font-light text-center text-sm mt-10 tracking-wider">
+          FREE MORE WHEN <a href="/booking#course_register" className="underline text-red-300 font-bold cursor-pointer">REGISTER</a> FOR A FULL COURSE
+        </div>
+      </div>
+    </motion.div>
   );
 };
 

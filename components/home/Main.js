@@ -1,7 +1,7 @@
 import React from "react";
 import GallerySlide from "./GallerySlide";
-import ProgramBoard from "./ProgramBoard";
-import AddressCard from "./AddressCard";
+import ProgramContainer from "./ProgramContainer";
+import AddressContainer from "./AddressContainer";
 import TeamContainer from "./TeamContainer";
 import SectionCard from "./SectionCard";
 
@@ -11,9 +11,9 @@ const Main = () => {
       <GallerySlide />
       {/* <SectionCard />
       <SectionCard /> */}
-      <ProgramBoard />
+      <ProgramContainer />
       <TeamContainer />
-      <AddressCard />
+      <AddressContainer />
     </div>
   );
 };

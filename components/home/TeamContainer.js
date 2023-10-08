@@ -20,9 +20,9 @@ const TeamContainer = () => {
   ];
 
   return (
-    <div className="w-full h-full mx-auto px-4 md:flex py-4 my-[4rem] flex flex-col bg-stone-100">
-      <div className="w-full flex flex-wrap justify-center my-10">
-        <h1 className="tracking-widest uppercase text-2xl font-bold text-gray-700">
+    <div className="sm:p-16 xs:p-8 px-6 py-12 relative mx-auto bg-stone-100">
+      <div className="w-full flex flex-wrap justify-center ">
+        <h1 className="tracking-widest uppercase text-2xl md:text-[40px] font-bold text-gray-700 my-5 md:my-10">
           Our Team
         </h1>
 
