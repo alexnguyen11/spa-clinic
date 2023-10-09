@@ -20,7 +20,7 @@ const services = [
     icon: MonitorHeart,
     label: "MEDICAL MASSAGE",
     color: "bg-yellow-400",
-    url: "/massage/medical-massage",
+    url: "/massage/medical-massage-group",
   },
   {
     icon: FitnessCenter,
