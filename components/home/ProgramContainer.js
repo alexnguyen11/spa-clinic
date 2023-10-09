@@ -21,7 +21,7 @@ const ProgramContainer = () => {
   ];
 
   return (
-    <div className="sm:p-16 xs:p-8 px-6 py-12 relative mx-auto ">
+    <div className="sm:p-16 xs:p-8 px-6 py-12 relative ">
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col justify-center items-center my-5 md:my-10">
           <h1 className="tracking-widest uppercase text-2xl md:text-[40px] font-bold">

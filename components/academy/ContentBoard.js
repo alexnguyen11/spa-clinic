@@ -1,17 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import pic01 from "@/public/assets/course/001-ORIENTAL AYURVEDIC.png"
-import pic02 from "@/public/assets/course/002- INSTANT PAIN RELIEF neck shoulder.png"
-import pic03 from "@/public/assets/course/003-ASIAN FOOT REFLEXOLOGY.png"
-import pic04 from "@/public/assets/course/006-RECOVERY ORGAN FUNCTION.png"
-import pic05 from "@/public/assets/course/005.png"
-import pic06 from "@/public/assets/course/006.png"
-import pic07 from "@/public/assets/course/007.png"
-import pic08 from "@/public/assets/course/008.png"
-import pic09 from "@/public/assets/course/009.png"
-import pic10 from "@/public/assets/course/010.png"
-import pic11 from "@/public/assets/course/011.png"
-import pic12 from "@/public/assets/course/012.png"
+import pic01 from "@/public/assets/course/001-ORIENTAL AYURVEDIC.png";
+import pic02 from "@/public/assets/course/002- INSTANT PAIN RELIEF neck shoulder.png";
+import pic03 from "@/public/assets/course/003-ASIAN FOOT REFLEXOLOGY.png";
+import pic04 from "@/public/assets/course/006-RECOVERY ORGAN FUNCTION.png";
+import pic05 from "@/public/assets/course/005.png";
+import pic06 from "@/public/assets/course/006.png";
+import pic07 from "@/public/assets/course/007.png";
+import pic08 from "@/public/assets/course/008.png";
+import pic09 from "@/public/assets/course/009.png";
+import pic10 from "@/public/assets/course/010.png";
+import pic11 from "@/public/assets/course/011.png";
+import pic12 from "@/public/assets/course/012.png";
 
 const ContentBoard = () => {
   const programs = [
@@ -105,7 +105,8 @@ const ContentBoard = () => {
     },
     {
       id: 12,
-      Ename: "treatment of acne and melasma freckless, pitted scars, face & skin recovery",
+      Ename:
+        "treatment of acne and melasma freckless, pitted scars, face & skin recovery",
       Vname: "điều trị mụn, nám, tàn nhang, sẹo rỗ, phục hồi da",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       img: pic12,
@@ -116,41 +117,43 @@ const ContentBoard = () => {
   return (
     <div className="container my-12 mx-auto px-4 md:px-12">
       <div className="w-full flex justify-center my-10">
-        {" "}
-        <h1 className="tracking-widest uppercase text-3xl font-bold text-emerald-700 mt-[4rem]">
+        <h1 className="tracking-widest uppercase text-3xl font-bold text-emerald-700 mt-10 mb-5">
           Our Programs
         </h1>
       </div>
-      <div className="flex flex-wrap -mx-1 lg:-mx-4 ">
+      <div className="flex flex-wrap -mx-1 lg:-mx-4">
         {programs.map((program) => (
           <div
             key={program.id}
             className="my-3 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3"
           >
-            <div className="overflow-hidden rounded-lg shadow-lg cursor-pointer md:h-[23rem] text-xs">
-              <Image
-                alt="Placeholder"
-                className="block h-auto w-full"
-                src={program.img}
-              />
+            <div className="flex flex-col transition transform hover:scale-105 duration-300 overflow-hidden rounded-lg shadow-lg hover:shadow-xl cursor-pointer md:h-[400px] text-xs">
+              <div className="relative h-[200px]">
+                <Image
+                  alt="Program Image"
+                  className="object-cover"
+                  layout="fill"
+                  src={program.img}
+                />
+              </div>
 
-              <div className="md:flex flex-row-reverse justify-between">
-                <div className="mx-4 py-2 md:py-4 ">
-                  <p className="text-grey-darker font-medium w-[4rem]">
+              <div className="p-4 flex-grow flex flex-col">
+                <h1 className="text-gray-700 uppercase md:text-[17px] font-semibold mb-2 leading-relaxed">
+                  {program.Ename}
+                </h1>
+                <p className="text-emerald-700 uppercase text-[10px] md:text-xs mb-3">
+                  {program.Vname}
+                </p>
+                <div className="mt-auto flex justify-between items-center">
+                  <p className="text-grey-darker font-medium">
                     {program.price} CAD
                   </p>
+                  <a href="/booking#course_register">
+                    <button className="text-white bg-emerald-700 px-3 py-1 rounded hover:bg-emerald-800">
+                      Register
+                    </button>
+                  </a>
                 </div>
-
-                <div className="flex items-center justify-between leading-tight p-2 md:p-4">
-                  <h1 className="md:mx-auto mx-2">
-                    <p className="text-black uppercase max-w-[18rem]">
-                      {program.Ename}
-                    </p>
-                  </h1>
-                </div>
-              </div>
-              <div className="max-w-[18rem] md:text-[0.6rem] text-[0.5rem] m-4 inset-x-0 bottom-0 ">
-                <p className="uppercase">{program.Vname}</p>
               </div>
             </div>
           </div>

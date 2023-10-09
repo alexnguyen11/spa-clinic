@@ -4,16 +4,28 @@ import ProgramContainer from "./ProgramContainer";
 import AddressContainer from "./AddressContainer";
 import TeamContainer from "./TeamContainer";
 import SectionCard from "./SectionCard";
+import WelcomeContainer from "./WelcomeContainer";
 
 const Main = () => {
   return (
-    <div className="w-full flex flex-wrap">
-      <GallerySlide />
-      {/* <SectionCard />
-      <SectionCard /> */}
-      <ProgramContainer />
-      <TeamContainer />
-      <AddressContainer />
+    <div className="">
+      <div className="relative">
+        {" "}
+        <GallerySlide />
+      </div>
+      <div className="relative">
+        <WelcomeContainer />
+      </div>
+      {/* <div className="relative">
+        <ProgramContainer />
+      </div> */}
+      <div className="relative">
+        {" "}
+        <TeamContainer />
+      </div>
+      <div className="relative">
+        <AddressContainer />
+      </div>
     </div>
   );
 };
