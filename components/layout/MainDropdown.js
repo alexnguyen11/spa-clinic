@@ -50,21 +50,18 @@ const MainDropdown = ({ item }) => {
         {isOpen ? <ArrowDropUp /> : <ArrowDropDown />}
       </button>
       {isOpen && (
-        <div className="dropdown-menu-content">
+        <div className="dropdown-menu-content z-10">
           <div className="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-            <div className="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-gray-900">
-              <div
-                onClick={() => handleItemClick("/massage")}
-                className="block px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:scale-103 transform transition duration-500 hover:font-medium cursor-pointer"
-              >
-                Massage
-              </div>
-              <div
-                onClick={() => handleItemClick("/spa")}
-                className="block px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:scale-103 transform transition duration-500 hover:font-medium cursor-pointer"
-              >
-                Spa
-              </div>
+            <div className="px-2 py-2 bg-white rounded-md shadow text-gray-900">
+              {services.map((service) => (
+                <div
+                  key={service.id}
+                  onClick={() => handleItemClick(service.url)}
+                  className="block px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:scale-103 transform transition duration-500 hover:font-medium cursor-pointer"
+                >
+                  {service.name}
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -74,3 +71,26 @@ const MainDropdown = ({ item }) => {
 };
 
 export default MainDropdown;
+
+const services = [
+  {
+    id: 1,
+    name: "Massage",
+    url: "/massage",
+  },
+  {
+    id: 1,
+    name: "Spa",
+    url: "/spa",
+  },
+];
+
+
+{/***
+
+
+
+
+
+
+*/}

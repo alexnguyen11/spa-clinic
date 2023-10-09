@@ -52,38 +52,38 @@ const GallerySlide = () => {
   }, [currentIndex]);
 
   return (
-    <div className="sm:p-16 xs:p-8 px-6 py-12 relative z-10">
-      <div className="md:flex justify-between">
-        <div className="uppercase m-auto">
-          <h1 className="text-[27px] md:text-[40px] m-4 px-4 tracking widest">
+    <div className="p-4 md:p-8 lg:p-12 relative z-0">
+      <div className="flex flex-col md:flex-row justify-center items-center">
+        <div className="text-center mb-6 md:mb-0 md:mr-8">
+          <h1 className="text-xl md:text-3xl mb-2 tracking-widest">
             Tai Chi Health & beauty Academy Centre
           </h1>
-          <h2 className="text-[16px] md:text-[20px] m-4 px-4 tracking-widest">
+          <h2 className="text-sm md:text-lg tracking-wider">
             Trung tâm đào tạo & dạy nghề spa dưỡng sinh
           </h2>
         </div>
 
-        <div className="relative w-[300px] md:w-[800px] h-[200px] md:h-[600px]  m-auto p-4">
+        <div className="relative w-full md:w-2/3 lg:w-1/2 h-56 md:h-96 lg:h-[400px]">
           <div
             style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-            className="w-full h-full rounded-2xl bg-cneter bg-cover duration-700 ease-in-out group cursor-pointer"
+            className="w-full h-full bg-center bg-cover rounded-lg duration-700 ease-in-out group cursor-pointer"
           >
             {/* Left Arrow */}
-            <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-white cursor-pointer">
+            <div className="absolute inset-y-0 left-0  items-center hidden group-hover:flex p-4 text-white cursor-pointer">
               <ArrowBackIos onClick={prevSlide} />
             </div>
             {/* Right Arrow */}
-            <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-white cursor-pointer">
+            <div className="absolute inset-y-0 right-0  items-center hidden group-hover:flex p-4 text-white cursor-pointer">
               <ArrowForwardIos onClick={nextSlide} />
             </div>
           </div>
 
-          <div className="flex top-4 justify-center py-2">
+          <div className="flex justify-center mt-2">
             {slides.map((slide, slideIndex) => (
               <div
                 key={slideIndex}
                 onClick={() => goToSlide(slideIndex)}
-                className={`cursor-pointer ${
+                className={`cursor-pointer mx-1 ${
                   currentIndex === slideIndex
                     ? "text-gray-700"
                     : "text-gray-400"
@@ -100,12 +100,3 @@ const GallerySlide = () => {
 };
 
 export default GallerySlide;
-
-{
-  /***
-
-0
-
-
-*/
-}

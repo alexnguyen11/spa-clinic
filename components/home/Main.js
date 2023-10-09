@@ -10,7 +10,6 @@ const Main = () => {
   return (
     <div className="">
       <div className="relative">
-        {" "}
         <GallerySlide />
       </div>
       <div className="relative">
@@ -20,7 +19,6 @@ const Main = () => {
         <ProgramContainer />
       </div> */}
       <div className="relative">
-        {" "}
         <TeamContainer />
       </div>
       <div className="relative">

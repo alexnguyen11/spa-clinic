@@ -53,18 +53,15 @@ const DropdownMenu = ({ item }) => {
         <div className="dropdown-menu-content translate-x-[6.5rem] -translate-y-9">
           <div className="absolute mt-2 rounded-md shadow-lg md:w-48">
             <div className="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-gray-900">
-              <div
-                onClick={() => handleItemClick("/massage")}
-                className="block px-4 py-2 text-sm bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:scale-103 transform transition duration-500 hover:font-medium cursor-pointer"
-              >
-                Massage
-              </div>
-              <div
-                onClick={() => handleItemClick("/spa")}
-                className="block px-4 py-2 text-sm bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:scale-103 transform transition duration-500 hover:font-medium cursor-pointer"
-              >
-                Spa
-              </div>
+              {services.map((service) => (
+                <div
+                  key={service.id}
+                  onClick={() => handleItemClick(service.url)}
+                  className="block px-4 py-2 text-sm bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:scale-103 transform transition duration-500 hover:font-medium cursor-pointer"
+                >
+                  {service.name}
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -74,3 +71,16 @@ const DropdownMenu = ({ item }) => {
 };
 
 export default DropdownMenu;
+
+const services = [
+  {
+    id: 1,
+    name: "Massage",
+    url: "/massage",
+  },
+  {
+    id: 1,
+    name: "Spa",
+    url: "/spa",
+  },
+];

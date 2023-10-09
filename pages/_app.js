@@ -1,21 +1,17 @@
-import { useEffect } from "react";
 import "@/styles/globals.css";
 import MainLayout from "@/components/layout/MainLayout";
 import { Provider } from "react-redux";
-import store from "@/redux/store";
-import { initializeCart } from "@/redux/cartRedux";
+import { PersistGate } from "redux-persist/integration/react";
+import { store, persistor } from "@/redux/store";
 
 function App({ Component, pageProps }) {
-  useEffect(() => {
-    const cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
-    store.dispatch(initializeCart({ products: cartProducts }));
-  }, []);
-
   return (
     <Provider store={store}>
-      <MainLayout>
-        <Component {...pageProps} />
-      </MainLayout>
+      <PersistGate loading={null} persistor={persistor}>
+        <MainLayout>
+          <Component {...pageProps} />
+        </MainLayout>
+      </PersistGate>
     </Provider>
   );
 }

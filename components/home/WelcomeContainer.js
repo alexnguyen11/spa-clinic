@@ -26,7 +26,7 @@ const services = [
     icon: FitnessCenter,
     label: "SPORT MASSAGE",
     color: "bg-green-500",
-    url: "/massage/sport-massage",
+    url: "/massage/sport-massage-group",
   },
   {
     icon: HeartBroken,
@@ -38,7 +38,7 @@ const services = [
     icon: CardGiftcardOutlined,
     label: "GIFT CERTIFICATES",
     color: "bg-blue-500",
-    url: "/gifts",
+    url: "/shop/gifts",
   },
   {
     icon: CalendarMonthOutlined,

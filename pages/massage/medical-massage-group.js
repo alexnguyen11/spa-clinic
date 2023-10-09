@@ -3,14 +3,14 @@ import MassageCard from "@/components/massage/MassageCard";
 
 const MEDICAL = () => {
   return (
-    <div className="sm:p-16 xs:p-8 px-6 py-12 relative">
-    <div className="flex items-center justify-center my-5 md:my-10 md:mb-[7rem]">
-      <h1 className="uppercase md:text-[40px] tracking-wider font-semibold">
+    <div className="p-4 sm:p-8 md:p-16 relative">
+    <div className="flex items-center justify-center my-5 md:my-10 lg:mb-[7rem]">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl tracking-wider font-semibold uppercase">
         Medical Massages
       </h1>
     </div>
 
-    <div className="grid grid-cols-3 gap-8 my-5">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-5">
       {massages.map((massage) => (
         <MassageCard massage={massage} />
       ))}

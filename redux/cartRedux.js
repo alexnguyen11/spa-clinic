@@ -15,11 +15,10 @@ const cartSlice = createSlice({
       state.quantity += 1;
       state.products.push(action.payload.product);
       state.total += action.payload.price;
-
-      // Update localStorage
-      localStorage.setItem("cartProducts", JSON.stringify(state.products));
     },
-    // Add other reducers as needed
+    setCart: (state, action) => {
+      return action.payload;
+    },
   },
 });
 
