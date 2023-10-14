@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 const PromoCard = () => {
   return (
-    <motion.div className="sm:p-16 xs:p-8 px-6 py-12 relative z-10 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-lg shadow-xl text-white">
+    <motion.div className="sm:p-16 xs:p-8 px-6 py-12 relative z-10 bg-gray-900 shadow-xl text-white">
       <div className="w-full flex flex-col items-center justify-center">
         {/* Header */}
         <h1 className="mb-4 uppercase md:text-6xl text-4xl font-extrabold">
           special offer
         </h1>
         <p className="mb-6 uppercase text-xl font-medium">
-        Don't miss out on our limited-time promotion
+          Don't miss out on our limited-time promotion
         </p>
 
         <div className="flex flex-col md:flex-row md:gap-8 md:my-5">
@@ -55,7 +55,14 @@ const PromoCard = () => {
           </div>
         </div>
         <div className="font-light text-center text-sm mt-10 tracking-wider">
-          FREE MORE WHEN <a href="/booking#course_register" className="underline text-red-300 font-bold cursor-pointer">REGISTER</a> FOR A FULL COURSE
+          FREE MORE WHEN{" "}
+          <a
+            href="/booking#course_register"
+            className="underline text-red-300 font-bold cursor-pointer"
+          >
+            REGISTER
+          </a>{" "}
+          FOR A FULL COURSE
         </div>
       </div>
     </motion.div>
