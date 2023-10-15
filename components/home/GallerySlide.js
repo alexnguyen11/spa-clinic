@@ -52,7 +52,7 @@ const GallerySlide = () => {
   }, [currentIndex]);
 
   return (
-    <div className="h-screen px-4 md:px-8 lg:px-12 relative">
+    <div className="md:h-screen p-4 md:px-8 lg:px-12 relative">
       <div className="flex flex-col md:flex-row justify-center items-center h-full">
         <div className="text-center mb-[4rem] md:mb-0 md:mr-8">
           <h1 className="text-xl md:text-3xl mb-2 tracking-widest">

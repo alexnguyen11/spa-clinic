@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const booking = () => {
   return (
-    <div className="w-full h-full bg-stone-100">
+    <div className="w-full h-full bg-gray-50">
       <div className=" font-poppins flex flex-col items-center justify-center">
-        <h1 className="my-[4rem] mx-2 md:text-4xl text-2xl tracking-wider uppercase font-light">
+      <h1 className="my-10 mx-2 md:text-4xl text-2xl tracking-wider uppercase font-light">
           Book an Appointment
         </h1>
         <div

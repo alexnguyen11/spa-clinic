@@ -77,10 +77,10 @@ const WelcomeContainer = () => {
       <div className="flex flex-col items-center justify-center">
         {/* Header */}
         <div className="text-center mb-8">
-          <p className="text-xs sm:text-sm md:text-base font-medium text-gray-500 uppercase mb-2 tracking-wider">
+          <p className="text-xs sm:text-sm md:text-base font-medium text-gray-400 uppercase mb-2 tracking-wider">
            TAI CHI HEALTH & BEAUTY ACADEMY CENTRE
           </p>
-          <h1 className="text-xl sm:text-2xl md:text-4xl lg:text5xl font-extrabold mb-6 text-yellow-800">
+          <h1 className="text-xl sm:text-2xl md:text-4xl lg:text5xl font-extrabold mb-6 text-yellow-700">
             Your Massage Therapy and Acupuncture Clinic
           </h1>
         </div>

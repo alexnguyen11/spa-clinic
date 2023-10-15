@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-//import clinicImg from "@/public/assets/home/clinicPhoto.jpeg"; // Update with your image path
+import clinicImg from "@/public/assets/home/clinicPhoto.jpeg"; // Update with your image path
 
 const ClinicSection = () => {
   return (
@@ -8,8 +8,8 @@ const ClinicSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left content - Image */}
         <div>
-          <img
-            src="{clinicImg}"
+          <Image
+            src={clinicImg}
             alt="Calgary Massage Clinic"
             width={500}
             height={375}

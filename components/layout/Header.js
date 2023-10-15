@@ -38,7 +38,7 @@ const Header = () => {
     },
     {
       id: 7,
-      url: "/shop/checkout",
+      url: "/shop/cart",
       name: <ShopingCart />,
     },
   ];
