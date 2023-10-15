@@ -1,18 +1,14 @@
 import React from "react";
 import MassageService from "@/components/massage/MassageService";
+import { swedish } from "@/public/assets/massage/";
 
 const SWEDISH = () => {
   return (
     <div>
       <MassageService
-        massageName={swedish.massageName}
-        imagePath={swedish.imagePath}
-        massageTitle={swedish.massageTitle}
-        massageDetails={swedish.massageDetails}
-        customizeTitle={swedish.customizeTitle}
-        customizeDetails={swedish.customizeDetails}
-        benefitTitle={swedish.benefitTitle}
-        benefitDetails={swedish.benefitDetails}
+        massageService={swedishMassage}
+        caution={caution}
+        difference={difference}
       />
     </div>
   );
@@ -20,9 +16,9 @@ const SWEDISH = () => {
 
 export default SWEDISH;
 
-const swedish = {
+const swedishMassage = {
   massageName: "Swedish Massage",
-  imagePath: "",
+  imagePath: swedish,
   massageTitle: "Relaxation & Stress Reduction",
   massageDetails:
     "This classic massage treatment is also known as a Relaxation Massage and the goal is to relax the entire body through various techniques such as long, flowing strokes using light to medium pressure. Your session will address such issues as stress, tension and mild to moderate muscle discomfort. Swedish massage is often recommended for first time massage clients and is excellent for improving circulation and flexibility while easing tension.",
@@ -32,4 +28,14 @@ const swedish = {
   benefitTitle: "Benefits of Swedish Massage",
   benefitDetails:
     "Relieve stress, Get rid of anxiety, Reduce fatigue, Rejuvenate your spirit, Alleviate pain, Increase circulation, Invigorate muscles, Release helpful endorphins",
+};
+
+const caution = {
+  cautionTitle: "",
+  cautionDetails: "",
+};
+
+const difference = {
+  differenceTitle: "",
+  differenceDetails: "",
 };

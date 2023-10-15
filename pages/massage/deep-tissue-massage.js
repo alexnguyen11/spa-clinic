@@ -1,19 +1,15 @@
 import React from "react";
 import MassageService from "@/components/massage/MassageService";
+import { deeptissue } from "@/public/assets/massage/";
 
 const DEEPTISSUE = () => {
   return (
     <div>
       {" "}
       <MassageService
-        massageName={deeptissue.massageName}
-        imagePath={deeptissue.imagePath}
-        massageTitle={deeptissue.massageTitle}
-        massageDetails={deeptissue.massageDetails}
-        customizeTitle={deeptissue.customizeTitle}
-        customizeDetails={deeptissue.customizeDetails}
-        benefitTitle={deeptissue.benefitTitle}
-        benefitDetails={deeptissue.benefitDetails}
+        massageService={deeptissueMassage}
+        caution={caution}
+        difference={difference}
       />
     </div>
   );
@@ -21,9 +17,9 @@ const DEEPTISSUE = () => {
 
 export default DEEPTISSUE;
 
-const deeptissue = {
+const deeptissueMassage = {
   massageName: "Deep Tissue Massage",
-  imagePath: "",
+  imagePath: deeptissue,
   massageTitle: "Deep Tissue Massage",
   massageDetails:
     "This massage style goes deeper into the muscle tissue to reduce spasms and scar tissue that often result from chronic injury or overuse. Often this treatment is a full-body session but can also focus on specific areas like the back, neck, hips or legs. As a result, muscle tension and toxins are released allowing blood and oxygen to circulate properly.",
@@ -33,4 +29,14 @@ const deeptissue = {
   benefitTitle: "Benefits of Deep Tissue Massage",
   benefitDetails:
     "Relieve stress, Lowers blood pressure, Reduces stress and anxiety, Breaks up scarred tissue, Improves Athletic Recovery, Can help with labor pain",
+};
+
+const caution = {
+  cautionTitle: "",
+  cautionDetails: "",
+};
+
+const difference = {
+  differenceTitle: "",
+  differenceDetails: "",
 };

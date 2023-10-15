@@ -1,32 +1,23 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
-const MassageService = ({
-  massageName,
-  imagePath,
-  massageTitle,
-  massageDetails,
-  customizeTitle,
-  customizeDetails,
-  benefitTitle,
-  benefitDetails,
-}) => {
-
-  const benefitsArray = benefitDetails.split(", ");
+const MassageService = ({ massageService, caution, difference }) => {
+  const benefitsArray = massageService.benefitDetails.split(", ");
 
   return (
     <div className="bg-gray-100 min-h-screen py-6 px-4 md:px-12 lg:px-20">
       {/* Header */}
       <div className="text-center py-4 md:py-8 mb-6">
         <h1 className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
-          {massageName}
+          {massageService.massageName}
         </h1>
       </div>
 
       {/* Massage Image */}
       <div className="mb-8">
-        <img
-          src={imagePath}
+        <Image
+          src={massageService.imagePath}
           alt="Swedish Massage"
           className="w-full object-cover rounded-md h-56 md:h-96"
         />
@@ -35,15 +26,39 @@ const MassageService = ({
       {/* Massage Description */}
       <div className="mb-10 p-4 md:p-6 border rounded-lg bg-white shadow-lg">
         <h2 className="text-2xl md:text-3xl font-semibold text-yellow-600 mb-4 md:mb-6">
-          {massageTitle}
+          {massageService.massageTitle}
         </h2>
-        <p className="text-base md:text-lg mb-4 md:mb-6">{massageDetails}</p>
+        <p className="text-base md:text-lg mb-4 md:mb-6">
+          {massageService.massageDetails}
+        </p>
+
+        {/** Caution */}
         <h2 className="text-2xl md:text-3xl font-semibold text-yellow-600 mb-4 md:mb-6">
-          {customizeTitle}
+          {caution.cautionTitle}
         </h2>
-        <p className="text-base md:text-lg mb-4 md:mb-6">{customizeDetails}</p>
+        <p className="text-base md:text-lg mb-4 md:mb-6">
+          {caution.cautionDetails}
+        </p>
+
+        {/** Different */}
         <h2 className="text-2xl md:text-3xl font-semibold text-yellow-600 mb-4 md:mb-6">
-          {benefitTitle}
+          {difference.differenceTitle}
+        </h2>
+        <p className="text-base md:text-lg mb-4 md:mb-6">
+          {difference.differenceDetails}
+        </p>
+
+        {/** Customize */}
+        <h2 className="text-2xl md:text-3xl font-semibold text-yellow-600 mb-4 md:mb-6">
+          {massageService.customizeTitle}
+        </h2>
+        <p className="text-base md:text-lg mb-4 md:mb-6">
+          {massageService.customizeDetails}
+        </p>
+
+        {/** Benefit */}
+        <h2 className="text-2xl md:text-3xl font-semibold text-yellow-600 mb-4 md:mb-6">
+          {massageService.benefitTitle}
         </h2>
         <ul className="list-disc list-inside text-base md:text-lg mb-6 pl-4">
           {benefitsArray.map((benefit, index) => (

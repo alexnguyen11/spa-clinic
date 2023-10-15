@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import {reflexology} from "@/public/assets/massage/"
+import Image from "next/image";
 
 const REFLEXOLOGY = () => {
   return (
@@ -13,9 +15,9 @@ const REFLEXOLOGY = () => {
 
       {/* Massage Image */}
       <div className="mb-8">
-        <img
-          src="/"
-          alt="Swedish Massage"
+        <Image
+          src={reflexology}
+          alt="Reflexology Massage"
           className="w-full object-cover rounded-md h-56 md:h-96"
         />
       </div>

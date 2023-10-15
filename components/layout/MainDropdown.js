@@ -39,7 +39,7 @@ const MainDropdown = ({ item }) => {
   }, []);
 
   return (
-    <div className="dropdown-menu ">
+    <div className="dropdown-menu">
       <button
         onClick={() => {
           setIsOpen(!isOpen);

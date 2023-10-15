@@ -32,13 +32,13 @@ const massages = [
       id: 2,
       title: "DEEP TISSUE MASSAGE",
       desc: "Deep tissue massage targets the body's connective tissues, using various techniques to penetrate muscles and fascia. It releases tension and addresses deep muscle pains. Regular sessions enhance its benefits, allowing therapists to address long-term issues, relax the body, and prevent injuries.",
-      url: "/massage/swedish-massage",
+      url: "/massage/deep-tissue-massage",
     },
     {
       id: 3,
       title: "INJURY MASSAGE",
       desc: "Repetitive strain injuries (RSI) impact tendons, muscles, nerves, and joints, often causing pain in areas like the neck, shoulders, and wrists. Common RSIs include Tendonitis, Carpel Tunnel, and Golfer’s Elbow. Symptoms can include numbness, tingling, pain, swelling, and reduced hand dexterity, often intensifying at night.",
-      url: "/massage/swedish-massage",
+      url: "/massage/repetitive-strain-injury-massage",
     },
 
   ];
