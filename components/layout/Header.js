@@ -36,11 +36,11 @@ const Header = () => {
       url: "/contact",
       name: "Contact",
     },
-    {
-      id: 7,
-      url: "/shop/cart",
-      name: <ShopingCart />,
-    },
+    // {
+    //   id: 7,
+    //   url: "/shop/cart",
+    //   name: <ShopingCart />,
+    // },
   ];
 
   const handleNav = () => {
@@ -48,14 +48,14 @@ const Header = () => {
   };
 
   return (
-    <div className="sticky top-0 md:static h-full w-full z-50">
-      <div className="rounded-none py-2 px-4 lg:px-8 lg:py-4 bg-white text-gray-800 drop-shadow-md">
-        <Navbar items={items} handleNav={handleNav} nav={nav} />
-        <div className={!nav ? "hidden" : ""}>
-          <SubNav items={items} />
-        </div>
+    <div className="sticky top-0 md:static h-full max-w-full z-50">
+    <div className="rounded-none py-2 px-4 lg:px-8 lg:py-4 bg-white  text-gray-800 drop-shadow-md">
+      <Navbar items={items} handleNav={handleNav} nav={nav} />
+      <div className={!nav ? "hidden" : ""}>
+        <SubNav items={items} />
       </div>
     </div>
+  </div>
   );
 };
 
