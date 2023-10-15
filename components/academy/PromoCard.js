@@ -1,7 +1,11 @@
-import { motion } from "framer-motion";
+import Link from "next/link";
+
 const PromoCard = () => {
   return (
-    <motion.div className="sm:p-16 xs:p-8 px-6 py-12 relative z-10 bg-gray-900 shadow-xl text-white">
+    <div
+      id="discounts"
+      className="sm:p-16 xs:p-8 px-6 py-12 relative z-10 bg-gray-900 shadow-xl text-white"
+    >
       <div className="w-full flex flex-col items-center justify-center">
         {/* Header */}
         <h1 className="mb-4 uppercase md:text-6xl text-4xl font-extrabold">
@@ -56,16 +60,16 @@ const PromoCard = () => {
         </div>
         <div className="font-light text-center text-sm mt-10 tracking-wider">
           FREE MORE WHEN{" "}
-          <a
+          <Link
             href="/booking#course_register"
             className="underline text-red-300 font-bold cursor-pointer"
           >
             REGISTER
-          </a>{" "}
+          </Link>{" "}
           FOR A FULL COURSE
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

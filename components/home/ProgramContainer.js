@@ -21,9 +21,13 @@ const ProgramContainer = () => {
             launching a successful business.
           </p>
           <div className="flex space-x-4 mt-4">
-            <button className="bg-emerald-500 text-black py-2 px-6 rounded hover:bg-emerald-600">
-              Enroll Now
-            </button>
+            <Link href="/booking#course_register">
+              {" "}
+              <button className="bg-emerald-500 text-black py-2 px-6 rounded hover:bg-emerald-600">
+                Enroll Now
+              </button>
+            </Link>
+
             <Link href="/academy">
               <div className="text-emerald-500 border-b-2 border-emerald-500 hover:text-emerald-600">
                 Discover More
@@ -46,7 +50,7 @@ const ProgramContainer = () => {
             <h3 className="text-[0.5rem] md:text-sm text-emerald-900 font-semibold text-center">
               Exclusive Personalized Discounts!
             </h3>
-            <Link href="/discounts">
+            <Link href="/academy#discounts">
               <div className="text-emerald-600 hover:underline mt-1 text-[0.5rem] md:text-sm">
                 Discover More
               </div>

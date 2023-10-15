@@ -7,7 +7,7 @@ const booking = () => {
   return (
     <div className="w-full h-full bg-gray-50">
       <div className=" font-poppins flex flex-col items-center justify-center">
-      <h1 className="my-10 mx-2 md:text-4xl text-2xl tracking-wider uppercase font-light">
+        <h1 className="my-10 mx-2 md:text-4xl text-2xl tracking-wider uppercase font-light">
           Book an Appointment
         </h1>
         <div
@@ -27,6 +27,7 @@ const booking = () => {
             </button>
           </a>
         </div>
+        
         <div
           id="spa"
           className="p-[3rem] bg-gradient-to-r from-amber-500 to-pink-500 text-white text-center lg:w-1/2 my-10 "
@@ -49,6 +50,7 @@ const booking = () => {
             </a>
           </div>
         </div>
+
         <div
           id="course_register"
           className="p-[3rem] bg-gradient-to-r from-emerald-500 to-emerald-900 text-white text-center lg:w-1/2 my-10 mb-[5rem]"

@@ -46,7 +46,7 @@ const index = () => {
                       View Details
                     </div>
                   </Link>
-                  <Link href="/booking">
+                  <Link href="/booking#spa">
                     <div className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-1 px-3 rounded-full transition duration-300 ease-in-out">
                       Book Now
                     </div>

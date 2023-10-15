@@ -13,6 +13,8 @@ import lymphaticdrainage from "./lymphatic-drainage.jpeg"
 import tmj from "./tmj-treatment-injury-rehab.jpeg"
 import postureadj from "./posture-adjustment.jpeg"
 import reiki from "./reiki-energy-treatment.jpeg"
+import medicalmassage from "./medical-massage.jpeg"
+import injurymassage from "./injury-massage.jpeg"
 
 
-export { deeptissue, therapeutic, hotstone, oil,paintriggerpointrelease, prepostnatal,reflexology, sport, swedish, thai, couple, lymphaticdrainage, tmj, postureadj, reiki};
+export { deeptissue, therapeutic, hotstone, oil,paintriggerpointrelease, prepostnatal,reflexology, sport, swedish, thai, couple, lymphaticdrainage, tmj, postureadj, reiki, medicalmassage, injurymassage};
