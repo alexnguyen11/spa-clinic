@@ -15,7 +15,9 @@ import {
   thai,
   couple,
   lymphaticdrainage,
-  tmj, postureadj, reiki
+  tmj,
+  postureadj,
+  reiki,
 } from "@/public/assets/massage";
 
 const index = () => {
@@ -28,7 +30,7 @@ const index = () => {
           src={massageImg}
           alt="Spa Background"
           layout="fill"
-          objectFit="cover"
+          className="object-cover z-0"
         />
 
         <div className="relative">

@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Navbar = ({ items, handleNav, nav }) => {
   return (
-    <div className="flex flex-wrap justify-between items-center w-full h-full p-4 2xl:px-16 z-50">
+    <div className="relative flex flex-wrap justify-between items-center w-full h-full p-4 2xl:px-16 z-50">
       <a href="/" className="flex items-center h-15 md:h-30 md:w-40 w-20 overflow-hidden">
         <Image src={LogoImg} className="" alt="Taichi Logo" />
       </a>

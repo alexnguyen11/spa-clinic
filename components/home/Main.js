@@ -10,18 +10,14 @@ import CourseSection from "./CourseSection";
 const Main = () => {
   return (
     <div className="">
-      <div className="relative">
-        <GallerySlide />
-      </div>
+      <GallerySlide />
       <div className="relative">
         <WelcomeContainer />
-      </div>
-      <div className="relative">
-        <ClinicSection/>
+        <ClinicSection />
       </div>
       <div className="relative">
         <ProgramContainer />
-        <CourseSection/>
+        <CourseSection />
       </div>
       <div className="relative">
         <TeamContainer />
