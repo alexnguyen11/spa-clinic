@@ -36,11 +36,11 @@ const Header = () => {
       url: "/contact",
       name: "Contact",
     },
-    // {
-    //   id: 7,
-    //   url: "/shop/cart",
-    //   name: <ShopingCart />,
-    // },
+    {
+      id: 7,
+      url: "/shop/cart",
+      name: <ShopingCart />,
+    },
   ];
 
   const handleNav = () => {
