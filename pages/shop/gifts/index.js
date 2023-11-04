@@ -1,13 +1,19 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useDispatch } from "react-redux";
-import { addProduct } from "@/redux/cartRedux";
+import { addProduct, resetCart } from "@/redux/cartRedux";
+import giftCards from "@/data/giftCards";
 
 const index = () => {
   const dispatch = useDispatch();
 
   const handleAddToCart = (product, price) => {
     dispatch(addProduct({ product, price }));
+  };
+
+  const handleResetCart = () => {
+    dispatch(resetCart());
   };
 
   return (
@@ -23,7 +29,7 @@ const index = () => {
             key={index}
             className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center"
           >
-            <img
+            <Image
               src={card.img}
               alt={`Gift Card of $${card.amount}`}
               className="mb-4 w-48 h-48 object-cover rounded"
@@ -45,10 +51,3 @@ const index = () => {
 };
 
 export default index;
-
-const giftCards = [
-  { amount: 50, link: "/path/to/50-link", img: "/path/to/image50.jpg" },
-  { amount: 100, link: "/path/to/100-link", img: "/path/to/image100.jpg" },
-  { amount: 150, link: "/path/to/150-link", img: "/path/to/image150.jpg" },
-  { amount: 200, link: "/path/to/200-link", img: "/path/to/image200.jpg" },
-];

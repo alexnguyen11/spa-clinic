@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const index = () => {
   return (
-    <div className="bg-gray-100 min-h-screen p-6">
+    <div className=" min-h-screen p-6">
       {/* Spa Banner */}
-      <div className="relative text-white text-center py-20 mb-10 rounded-lg overflow-hidden">
+      <div className="relative text-white text-center py-20 mb-10 rounded-lg overflow-hidden -z-10">
         <Image
           src={spaImg}
           alt="Spa Background"
