@@ -1,22 +1,11 @@
 import React from "react";
-import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 
 const PaymentMethod = () => {
-  const stripe = useStripe();
+
   const elements = useElements();
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
 
-    if (!stripe || !elements) return;
-
-    const cardElement = elements.getElement(CardElement);
-    const { error, paymentMethod } = await stripe.createPaymentMethod({
-      type: "card",
-      card: cardElement,
-    });
-
-    // Send `paymentMethod.id` to your server for charging or other processes
   };
 
   return (
@@ -25,7 +14,7 @@ const PaymentMethod = () => {
         Payment
       </h3>
       <form onSubmit={handleSubmit}>
-        <CardElement />
+
         <button type="submit" disabled={!stripe}>
           Pay
         </button>
