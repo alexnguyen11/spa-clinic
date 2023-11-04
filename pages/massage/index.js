@@ -22,15 +22,15 @@ import {
 
 const index = () => {
   return (
-    <div className="bg-gray-100 min-h-screen p-6">
+    <div className="min-h-screen p-6">
       {/* Massage Banner */}
 
-      <div className="relative text-white text-center py-20 mb-10 rounded-lg overflow-hidden">
+      <div className="relative text-white text-center py-20 mb-10 rounded-lg -z-10">
         <Image
           src={massageImg}
           alt="Spa Background"
           layout="fill"
-          className="object-cover z-0"
+          className="object-cover overflow-hidden h-full w-full"
         />
 
         <div className="relative">

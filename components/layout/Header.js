@@ -2,8 +2,10 @@ import { useState } from "react";
 import SubNav from "./SubNav";
 import Navbar from "./Navbar";
 import ShopingCart from "../cart/ShopingCart";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   const [nav, setNav] = useState(false);
 
   const items = [
@@ -39,7 +41,7 @@ const Header = () => {
     {
       id: 7,
       url: "/shop/cart",
-      name: <ShopingCart />,
+      name: <ShopingCart totalQuantity={totalQuantity} />,
     },
   ];
 
