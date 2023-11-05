@@ -1,6 +1,6 @@
 import React from "react";
 import AboutImg from "@/public/assets/about.jpeg";
-import StaffCard from "@/components/staff/StaffCard";
+import StaffCard from "@/src/components/staff/StaffCard";
 import Image from "next/image";
 import VincentImg from "@/public/assets/profile/vincent_profile.jpeg";
 import EllaImg from "@/public/assets/profile/ella_profile.jpeg";

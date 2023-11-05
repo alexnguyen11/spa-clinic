@@ -1,5 +1,5 @@
 import React from "react";
-import MassageService from "@/components/massage/MassageService";
+import MassageService from "@/src/components/massage/MassageService";
 import { swedish } from "@/public/assets/massage/";
 
 const SWEDISH = () => {

@@ -1,4 +1,4 @@
-import MassageService from "@/components/massage/MassageService";
+import MassageService from "@/src/components/massage/MassageService";
 import { prepostnatal } from "@/public/assets/massage";
 
 const PREPOSTNATAL = () => {

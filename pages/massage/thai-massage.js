@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { thai } from "@/public/assets/massage/";
-import MassageService from "@/components/massage/MassageService";
+import MassageService from "@/src/components/massage/MassageService";
 
 const THAI = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import CheckoutSummary from "@/components/checkout/CheckoutSummary";
-import PaymentMethod from "@/components/checkout/PaymentMethod";
+import CheckoutSummary from "@/src/components/checkout/CheckoutSummary";
+import PaymentMethod from "@/src/components/checkout/PaymentMethod";
 
 const Checkout = () => {
   return (

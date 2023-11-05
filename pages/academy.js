@@ -1,8 +1,8 @@
 import React from "react";
-import AcademyBanner from "@/components/academy/AcademyBanner";
-import ContentBoard from "@/components/academy/ContentBoard";
-import CourseInfo from "@/components/academy/CourseInfo";
-import PromoCard from "@/components/academy/PromoCard";
+import AcademyBanner from "@/src/components/academy/AcademyBanner";
+import ContentBoard from "@/src/components/academy/ContentBoard";
+import CourseInfo from "@/src/components/academy/CourseInfo";
+import PromoCard from "@/src/components/academy/PromoCard";
 
 const academy = () => {
   return (

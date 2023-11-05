@@ -1,5 +1,5 @@
 import React from "react";
-import LogoImg from "../../public/assets/logo_new.png";
+import LogoImg from "@/public/assets/logo_new.png";
 import Image from "next/image";
 
 const Footer = () => {
@@ -13,8 +13,6 @@ const Footer = () => {
                 src={LogoImg}
                 className="md:w-[300px] w-[150px]"
                 alt="Taichi Logo"
-                width={300} // Added this
-                height={150} // and this
               />
             </a>
           </div>

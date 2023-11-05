@@ -1,4 +1,4 @@
-import MassageService from "@/components/massage/MassageService";
+import MassageService from "@/src/components/massage/MassageService";
 import { lymphaticdrainage } from "@/public/assets/massage";
 
 const LYMPHATICDRAINAGE = () => {

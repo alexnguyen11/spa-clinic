@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useDispatch } from "react-redux";
-import { addProduct, resetCart } from "@/redux/cartRedux";
+import { addProduct, resetCart } from "@/src/redux/cartRedux";
 import giftCards from "@/data/giftCards";
 
 const index = () => {
@@ -31,14 +31,14 @@ const index = () => {
           >
             <Image
               src={card.img}
-              alt={`Gift Card of $${card.amount}`}
+              alt={`Gift Card of $${card.price}`}
               className="mb-4 w-48 h-48 object-cover rounded"
             />
             <Link href={card.link}>
-              <div className="mb-4 text-xl font-semibold">$ {card.amount}</div>
+              <div className="mb-4 text-xl font-semibold">$ {card.price}</div>
             </Link>
             <button
-              onClick={() => handleAddToCart(card, card.amount)}
+              onClick={() => handleAddToCart(card, card.price)}
               className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded mt-auto"
             >
               Add to Cart

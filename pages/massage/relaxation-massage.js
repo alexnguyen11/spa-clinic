@@ -1,5 +1,5 @@
 import React from "react";
-import MassageCard from "@/components/massage/MassageCard";
+import MassageCard from "@/src/components/massage/MassageCard";
 import {
   swedish,
   deeptissue,

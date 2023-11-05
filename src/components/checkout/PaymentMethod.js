@@ -2,8 +2,6 @@ import React from "react";
 
 const PaymentMethod = () => {
 
-  const elements = useElements();
-
   const handleSubmit = async (event) => {
 
   };
@@ -15,7 +13,7 @@ const PaymentMethod = () => {
       </h3>
       <form onSubmit={handleSubmit}>
 
-        <button type="submit" disabled={!stripe}>
+        <button type="submit">
           Pay
         </button>
       </form>

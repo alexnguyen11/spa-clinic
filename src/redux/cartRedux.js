@@ -35,7 +35,7 @@ const cartSlice = createSlice({
 
       product.quantity++;
       state.totalQuantity += 1;
-      state.total += product.amount;
+      state.total += product.price;
     },
 
     decrementQuantity: (state, action) => {
@@ -45,11 +45,11 @@ const cartSlice = createSlice({
       if (product.quantity > 1) {
         product.quantity--;
         state.totalQuantity -= 1;
-        state.total -= product.amount;
+        state.total -= product.price;
       } else {
         // If product quantity is 1, remove it from the cart
         state.totalQuantity -= 1;
-        state.total -= product.amount;
+        state.total -= product.price;
         state.products = state.products.filter((p) => p.id !== action.payload);
       }
     },
@@ -61,7 +61,7 @@ const cartSlice = createSlice({
 
       if (productToRemove) {
         state.totalQuantity -= productToRemove.quantity;
-        state.total -= productToRemove.amount * productToRemove.quantity;
+        state.total -= productToRemove.price * productToRemove.quantity;
       }
       state.products = state.products.filter((p) => p.id !== action.payload);
     },

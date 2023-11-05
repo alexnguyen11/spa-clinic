@@ -1,8 +1,8 @@
 import "@/styles/globals.css";
-import MainLayout from "@/components/layout/MainLayout";
+import MainLayout from "@/src/components/layout/MainLayout";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
-import { store, persistor } from "@/redux/store";
+import { store, persistor } from "@/src/redux/store";
 
 function App({ Component, pageProps }) {
   return (

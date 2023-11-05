@@ -3,9 +3,10 @@ import {
   incrementQuantity,
   decrementQuantity,
   removeProduct,
-} from "@/redux/cartRedux";
+} from "@/src/redux/cartRedux";
 import Link from "next/link";
 import Image from "next/image";
+import PayButton from "@/src/components/checkout/PayButton";
 
 const cart = () => {
   const dispatch = useDispatch();
@@ -13,6 +14,8 @@ const cart = () => {
   const products = useSelector((state) => state.cart.products);
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   const subtotal = useSelector((state) => state.cart.total);
+
+  console.log(products)
 
   const updateQuantity = (id, action) => {
     if (action === "increase") {
@@ -81,7 +84,7 @@ const cart = () => {
 
               <div className="mt-4 md:mt-0">
                 <span className="text-lg font-medium text-gray-700">
-                  ${product.amount}
+                  ${product.price}
                 </span>
                 <button
                   className="ml-4 text-red-500 hover:text-red-600 focus:outline-none"
@@ -104,12 +107,7 @@ const cart = () => {
           <h4 className="text-xl font-bold text-gray-700 mb-6">
             Sub Total: ${subtotal}
           </h4>
-          <Link href="/shop/checkout">
-            {" "}
-            <button className="w-full bg-blue-500 text-white px-4 py-2 rounded-lg transform transition hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-              Proceed to Checkout
-            </button>
-          </Link>
+          <PayButton products={products} />
         </div>
       </div>
     );
