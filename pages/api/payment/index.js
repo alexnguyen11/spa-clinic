@@ -5,7 +5,7 @@ const url = process.env.CLIENT_URL;
 
 export default async (req, res) => {
   if (req.method === "POST") {
-    const { products } = req.body; // Expecting items to be an array of { name, amount, quantity }
+    const { products } = req.body; 
 
     if (!products || products.length === 0) {
       res.status(400).json({ error: "No products provided." });
@@ -17,13 +17,14 @@ export default async (req, res) => {
         price_data: {
           currency: "cad",
           product_data: {
-            name: item.name,
+            name: item.productName,
+            images: [item.image?.url],
             metadata: {
-              id: item.id,
+              id: item._id,
             },
           },
-          unit_amount: item.amount * 100,
-        },
+          unit_amount: item.price * 100,
+        }, 
         quantity: item.quantity,
       }));
 
