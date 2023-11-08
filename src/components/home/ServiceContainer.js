@@ -38,7 +38,7 @@ const services = [
     icon: CardGiftcardOutlined,
     label: "GIFT CERTIFICATES",
     color: "text-white",
-    url: "#",
+    url: "/shop/gifts",
   },
   {
     icon: CalendarMonthOutlined,

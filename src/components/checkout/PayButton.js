@@ -1,14 +1,19 @@
 import React from "react";
 import axios from "axios";
 import { url } from "@/utils/api";
+import { resetCart } from "@/src/redux/cartRedux";
+import { useDispatch } from "react-redux";
 
 const PayButton = ({ products }) => {
-  const handleCheckout = () => {
 
+  const dispatch = useDispatch();
+
+  const handleCheckout = () => {
     axios
       .post(`${url}/payment`, { products })
       .then((res) => {
         if (res.data.url) {
+          dispatch(resetCart());
           window.location.href = res.data.url;
         }
       })
