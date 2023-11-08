@@ -1,6 +1,6 @@
 import React from "react";
 import { hotstone } from "@/public/assets/massage";
-import MassageService from "@/components/massage/MassageService";
+import MassageService from "@/src/components/massage/MassageService";
 
 const HOTSTONE = () => {
   return (

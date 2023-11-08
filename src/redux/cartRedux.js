@@ -14,7 +14,7 @@ const cartSlice = createSlice({
     addProduct: (state, action) => {
       // check if there's the same product in the cart
       const productInCart = state.products.find(
-        (product) => product.id === action.payload.product.id
+        (product) => product._id === action.payload.product._id
       );
 
       if (productInCart) {
@@ -30,40 +30,40 @@ const cartSlice = createSlice({
     incrementQuantity: (state, action) => {
 
       const product = state.products.find(
-        (product) => product.id === action.payload
+        (product) => product._id === action.payload
       );
 
       product.quantity++;
       state.totalQuantity += 1;
-      state.total += product.amount;
+      state.total += product.price;
     },
 
     decrementQuantity: (state, action) => {
       const product = state.products.find(
-        (product) => product.id === action.payload
+        (product) => product._id === action.payload
       );
       if (product.quantity > 1) {
         product.quantity--;
         state.totalQuantity -= 1;
-        state.total -= product.amount;
+        state.total -= product.price;
       } else {
         // If product quantity is 1, remove it from the cart
         state.totalQuantity -= 1;
-        state.total -= product.amount;
-        state.products = state.products.filter((p) => p.id !== action.payload);
+        state.total -= product.price;
+        state.products = state.products.filter((p) => p._id !== action.payload);
       }
     },
 
     removeProduct: (state, action) => {
       const productToRemove = state.products.find(
-        (product) => product.id === action.payload
+        (product) => product._id === action.payload
       );
 
       if (productToRemove) {
         state.totalQuantity -= productToRemove.quantity;
-        state.total -= productToRemove.amount * productToRemove.quantity;
+        state.total -= productToRemove.price * productToRemove.quantity;
       }
-      state.products = state.products.filter((p) => p.id !== action.payload);
+      state.products = state.products.filter((p) => p._id !== action.payload);
     },
 
     setCart: (state, action) => {
