@@ -40,12 +40,12 @@ const booking = () => {
             <p className="text-xl font-semibold">Contact to Book</p>
 
             <p className="text-lg my-2">
-              <PersonIcon /> Hanh
+              <PersonIcon /> Vincent Dang
             </p>
             <a href="tel:4037033883" className="hover:underline">
               {" "}
               <p className="text-lg">
-                <CallIcon /> 403-703-3883
+                <CallIcon /> 403-880-0062
               </p>
             </a>
           </div>
