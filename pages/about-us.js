@@ -11,41 +11,42 @@ const StoriesSection = () => {
   const staffs = [
     {
       id: 1,
-      name: "Sophie Wu",
-      position: "Massage Therapist",
-      desc: "",
-      img: SophieImg,
-    },
-    {
-      id: 2,
       name: "Vincent Dang",
       position: "Massage Therapist",
       desc: "",
       img: VincentImg,
     },
     {
-      id: 4,
+      id: 2,
+      name: "Sophie Wu",
+      position: "Massage Therapist",
+      desc: "",
+      img: SophieImg,
+    },
+    
+    {
+      id: 3,
       name: "Avi Zhen",
       position: "Massage Therapist",
       desc: "",
       img: ProfileIcon,
     },
     {
-      id: 5,
+      id: 4,
       name: "Ann Phong",
       position: "Massage Therapist",
       desc: "",
       img: ProfileIcon,
     },
     {
-      id: 7,
+      id: 5,
       name: "Jie Xu",
       position: "Massage Therapist",
       desc: "",
       img: EllaImg,
     },
     {
-      id: 9,
+      id: 6,
       name: "Kathy",
       position: "Hair Technician",
       desc: "",
@@ -53,7 +54,7 @@ const StoriesSection = () => {
     },
 
     {
-      id: 9,
+      id: 7,
       name: "Thao",
       position: "Massage Therapist",
       desc: "",
@@ -67,15 +68,19 @@ const StoriesSection = () => {
           <h2 className="text-3xl font-bold mb-8 text-teal-900">Our Stories</h2>
           <div className="flex flex-wrap tracking-wide">
             <p className="text-base mt-4">
-              Taichi Massage & Therapy was originally built in 2020 during the
-              COVID-19 pandemic. Despite experiencing lockdowns, we became busy
-              during the summer. On July 27, 2021, we were seriously affected by
-              a fire next door. After 13 months of closure and rebuilding, we
-              reopened on September 1, 2022. We have assembled a new team of
-              registered massage therapists. We are proud to have a dedicated
-              team of caring, knowledgeable, and skilled individuals who are
-              committed to helping our clients and neighbors achieve their
-              health and wellness goals.
+            Taichi Spa Beauty Oriental Ayuverdic Center in the heart of serenity, Tranquil Oasis began as a sanctuary for those seeking respite through the healing touch of massage therapy. Our journey commenced with a singular vision: to provide an unparalleled experience of relaxation and rejuvenation. The essence of our treatments lies in the delicate fusion of traditional techniques and modern wellness practices.
+            </p>
+            <p className="text-base mt-4">
+            As whispers of our bespoke massages traveled, we embraced the ancient wisdom of Oriental Ayurvedic treatments, incorporating a specialized hair spa that promises not only relaxation but a restoration of vitality and luster to every strand. The gentle hands of our therapists dance in rhythmic harmony with nourishing oils, creating a symphony of scents and sensations that transport you to a realm of inner peace.
+            </p>
+            <p className="text-base mt-4">
+            Our commitment to beauty and wellness blossomed beyond the confines of personal treatment, aspiring to share our knowledge and passion with the world. Thus, the Taichi Spa Beauty Oriental Ayuverdic Academy was born. A center of learning, it is dedicated to educating aspiring students in the art of beauty and spa therapies, with a particular emphasis on Chinese Oriental and Ayurvedic hair spa techniques.
+            </p>
+            <p className="text-base mt-4">
+            At the academy, the ancient meets the avant-garde, as students are immersed in a curriculum that blends time-honored practices with contemporary beauty science. Our courses are meticulously crafted, ensuring that each student embarks on a transformative educational journey, equipped with the skills to heal, the knowledge to innovate, and the wisdom to continue the legacy of holistic wellness.
+            </p>
+            <p className="text-base mt-4">
+            Taichi Spa Beauty has evolved from a humble massage clinic to a beacon of learning and an arbiter of the holistic spa experience. We invite you to partake in this continuous journey, be it as a guest seeking solace or as a student eager to explore the boundless possibilities of beauty and spa therapy.
             </p>
           </div>
         </div>

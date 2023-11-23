@@ -2,6 +2,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import CallIcon from "@mui/icons-material/Call";
 import BusinessIcon from "@mui/icons-material/Business";
 import Link from "next/link";
+import GoogleBooking from "@/src/components/booking/GoogleBooking";
 
 const booking = () => {
   return (
@@ -36,7 +37,8 @@ const booking = () => {
           <p className="mt-4 text-lg">
             Indulge in our luxurious hair shampoo spa treatments.
           </p>
-          <div className="mt-6">
+          <GoogleBooking/>
+          {/* <div className="mt-6">
             <p className="text-xl font-semibold">Contact to Book</p>
 
             <p className="text-lg my-2">
@@ -48,7 +50,7 @@ const booking = () => {
                 <CallIcon /> 403-880-0062
               </p>
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div
